@@ -3,137 +3,229 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BA2C058D26B086A8007011A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2C058C26B086A8007011A5 /* AppDelegate.swift */; };
-		BA2C058F26B086A8007011A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2C058E26B086A8007011A5 /* ViewController.swift */; };
-		BA2C059126B086AA007011A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2C059026B086AA007011A5 /* Assets.xcassets */; };
-		BA2C059426B086AA007011A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2C059226B086AA007011A5 /* Main.storyboard */; };
-		BA2C05A026B086AA007011A5 /* TalkToMBTITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2C059F26B086AA007011A5 /* TalkToMBTITests.swift */; };
-		BA2C05AB26B086AA007011A5 /* TalkToMBTIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2C05AA26B086AA007011A5 /* TalkToMBTIUITests.swift */; };
+		4B67DA46517436A90780050A /* Pods_TalkToMBTI_TalkToMBTIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BF688F406BFE35EFCE1824 /* Pods_TalkToMBTI_TalkToMBTIUITests.framework */; };
+		B9F7DFB8872335C2581F018E /* Pods_TalkToMBTITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B9D9CE557154894E0B4E8C /* Pods_TalkToMBTITests.framework */; };
+		BA2C05C526B0931B007011A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2C05C426B0931B007011A5 /* AppDelegate.swift */; };
+		BA2C05C926B0931B007011A5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2C05C826B0931B007011A5 /* LoginViewController.swift */; };
+		BA2C05CE26B0931D007011A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2C05CD26B0931D007011A5 /* Assets.xcassets */; };
+		BA2C05D126B0931D007011A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2C05CF26B0931D007011A5 /* LaunchScreen.storyboard */; };
+		BA2C05DC26B0931D007011A5 /* TalkToMBTITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2C05DB26B0931D007011A5 /* TalkToMBTITests.swift */; };
+		BA2C05E726B0931D007011A5 /* TalkToMBTIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2C05E626B0931D007011A5 /* TalkToMBTIUITests.swift */; };
+		BA2C05F626B09573007011A5 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2C05F526B09573007011A5 /* LoginViewModel.swift */; };
+		BA2C05F826B095A1007011A5 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2C05F726B095A1007011A5 /* LoginModel.swift */; };
+		BA2C05FD26B09A4F007011A5 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2C05FC26B09A4F007011A5 /* AuthService.swift */; };
+		BA2C060026B09A60007011A5 /* APIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2C05FF26B09A60007011A5 /* APIRepository.swift */; };
+		BA95D17026B09B6F00EEA476 /* ServiceProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA95D16F26B09B6F00EEA476 /* ServiceProviderType.swift */; };
+		BA95D17226B09C3400EEA476 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA95D17126B09C3400EEA476 /* BaseService.swift */; };
+		C480BF1A6B52FB2990596EC3 /* Pods_TalkToMBTI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56AED899A24829C3952F567E /* Pods_TalkToMBTI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BA2C059C26B086AA007011A5 /* PBXContainerItemProxy */ = {
+		BA2C05D826B0931D007011A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BA2C058126B086A8007011A5 /* Project object */;
+			containerPortal = BA2C05B926B0931B007011A5 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BA2C058826B086A8007011A5;
+			remoteGlobalIDString = BA2C05C026B0931B007011A5;
 			remoteInfo = TalkToMBTI;
 		};
-		BA2C05A726B086AA007011A5 /* PBXContainerItemProxy */ = {
+		BA2C05E326B0931D007011A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BA2C058126B086A8007011A5 /* Project object */;
+			containerPortal = BA2C05B926B0931B007011A5 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BA2C058826B086A8007011A5;
+			remoteGlobalIDString = BA2C05C026B0931B007011A5;
 			remoteInfo = TalkToMBTI;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BA2C058926B086A8007011A5 /* TalkToMBTI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkToMBTI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA2C058C26B086A8007011A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA2C058E26B086A8007011A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BA2C059026B086AA007011A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BA2C059326B086AA007011A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BA2C059526B086AA007011A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA2C059626B086AA007011A5 /* TalkToMBTI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TalkToMBTI.entitlements; sourceTree = "<group>"; };
-		BA2C059B26B086AA007011A5 /* TalkToMBTITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalkToMBTITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA2C059F26B086AA007011A5 /* TalkToMBTITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkToMBTITests.swift; sourceTree = "<group>"; };
-		BA2C05A126B086AA007011A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA2C05A626B086AA007011A5 /* TalkToMBTIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalkToMBTIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA2C05AA26B086AA007011A5 /* TalkToMBTIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkToMBTIUITests.swift; sourceTree = "<group>"; };
-		BA2C05AC26B086AA007011A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56AED899A24829C3952F567E /* Pods_TalkToMBTI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkToMBTI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58B9D9CE557154894E0B4E8C /* Pods_TalkToMBTITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkToMBTITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A062C4A3F3CE1FDE39E10776 /* Pods-TalkToMBTI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkToMBTI.release.xcconfig"; path = "Target Support Files/Pods-TalkToMBTI/Pods-TalkToMBTI.release.xcconfig"; sourceTree = "<group>"; };
+		AF721174B8AF648BEE3FFD98 /* Pods-TalkToMBTI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkToMBTI.debug.xcconfig"; path = "Target Support Files/Pods-TalkToMBTI/Pods-TalkToMBTI.debug.xcconfig"; sourceTree = "<group>"; };
+		BA2C05C126B0931B007011A5 /* TalkToMBTI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkToMBTI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA2C05C426B0931B007011A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA2C05C826B0931B007011A5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BA2C05CD26B0931D007011A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA2C05D026B0931D007011A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA2C05D226B0931D007011A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA2C05D726B0931D007011A5 /* TalkToMBTITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalkToMBTITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA2C05DB26B0931D007011A5 /* TalkToMBTITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkToMBTITests.swift; sourceTree = "<group>"; };
+		BA2C05DD26B0931D007011A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA2C05E226B0931D007011A5 /* TalkToMBTIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalkToMBTIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA2C05E626B0931D007011A5 /* TalkToMBTIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkToMBTIUITests.swift; sourceTree = "<group>"; };
+		BA2C05E826B0931D007011A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA2C05F526B09573007011A5 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		BA2C05F726B095A1007011A5 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		BA2C05FC26B09A4F007011A5 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		BA2C05FF26B09A60007011A5 /* APIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRepository.swift; sourceTree = "<group>"; };
+		BA95D16E26B09AD500EEA476 /* TalkToMBTI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TalkToMBTI.entitlements; sourceTree = "<group>"; };
+		BA95D16F26B09B6F00EEA476 /* ServiceProviderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderType.swift; sourceTree = "<group>"; };
+		BA95D17126B09C3400EEA476 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		BF2FF5D835C0367B4CE3DEEF /* Pods-TalkToMBTI-TalkToMBTIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkToMBTI-TalkToMBTIUITests.release.xcconfig"; path = "Target Support Files/Pods-TalkToMBTI-TalkToMBTIUITests/Pods-TalkToMBTI-TalkToMBTIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CCBE8EF4CB7267D92C8DB997 /* Pods-TalkToMBTITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkToMBTITests.debug.xcconfig"; path = "Target Support Files/Pods-TalkToMBTITests/Pods-TalkToMBTITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D1BF688F406BFE35EFCE1824 /* Pods_TalkToMBTI_TalkToMBTIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkToMBTI_TalkToMBTIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F10EB87A4E8E05D6B4049B0B /* Pods-TalkToMBTI-TalkToMBTIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkToMBTI-TalkToMBTIUITests.debug.xcconfig"; path = "Target Support Files/Pods-TalkToMBTI-TalkToMBTIUITests/Pods-TalkToMBTI-TalkToMBTIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FEAD06779C0AF920D5BEA983 /* Pods-TalkToMBTITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkToMBTITests.release.xcconfig"; path = "Target Support Files/Pods-TalkToMBTITests/Pods-TalkToMBTITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BA2C058626B086A8007011A5 /* Frameworks */ = {
+		BA2C05BE26B0931B007011A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C480BF1A6B52FB2990596EC3 /* Pods_TalkToMBTI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA2C059826B086AA007011A5 /* Frameworks */ = {
+		BA2C05D426B0931D007011A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9F7DFB8872335C2581F018E /* Pods_TalkToMBTITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA2C05A326B086AA007011A5 /* Frameworks */ = {
+		BA2C05DF26B0931D007011A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B67DA46517436A90780050A /* Pods_TalkToMBTI_TalkToMBTIUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BA2C058026B086A8007011A5 = {
+		93CA5D141544C694A545B0DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BA2C058B26B086A8007011A5 /* TalkToMBTI */,
-				BA2C059E26B086AA007011A5 /* TalkToMBTITests */,
-				BA2C05A926B086AA007011A5 /* TalkToMBTIUITests */,
-				BA2C058A26B086A8007011A5 /* Products */,
+				56AED899A24829C3952F567E /* Pods_TalkToMBTI.framework */,
+				D1BF688F406BFE35EFCE1824 /* Pods_TalkToMBTI_TalkToMBTIUITests.framework */,
+				58B9D9CE557154894E0B4E8C /* Pods_TalkToMBTITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6D7243A33EE4BBF06763C39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF721174B8AF648BEE3FFD98 /* Pods-TalkToMBTI.debug.xcconfig */,
+				A062C4A3F3CE1FDE39E10776 /* Pods-TalkToMBTI.release.xcconfig */,
+				F10EB87A4E8E05D6B4049B0B /* Pods-TalkToMBTI-TalkToMBTIUITests.debug.xcconfig */,
+				BF2FF5D835C0367B4CE3DEEF /* Pods-TalkToMBTI-TalkToMBTIUITests.release.xcconfig */,
+				CCBE8EF4CB7267D92C8DB997 /* Pods-TalkToMBTITests.debug.xcconfig */,
+				FEAD06779C0AF920D5BEA983 /* Pods-TalkToMBTITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BA2C05B826B0931B007011A5 = {
+			isa = PBXGroup;
+			children = (
+				BA2C05C326B0931B007011A5 /* TalkToMBTI */,
+				BA2C05DA26B0931D007011A5 /* TalkToMBTITests */,
+				BA2C05E526B0931D007011A5 /* TalkToMBTIUITests */,
+				BA2C05C226B0931B007011A5 /* Products */,
+				A6D7243A33EE4BBF06763C39 /* Pods */,
+				93CA5D141544C694A545B0DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		BA2C058A26B086A8007011A5 /* Products */ = {
+		BA2C05C226B0931B007011A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BA2C058926B086A8007011A5 /* TalkToMBTI.app */,
-				BA2C059B26B086AA007011A5 /* TalkToMBTITests.xctest */,
-				BA2C05A626B086AA007011A5 /* TalkToMBTIUITests.xctest */,
+				BA2C05C126B0931B007011A5 /* TalkToMBTI.app */,
+				BA2C05D726B0931D007011A5 /* TalkToMBTITests.xctest */,
+				BA2C05E226B0931D007011A5 /* TalkToMBTIUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BA2C058B26B086A8007011A5 /* TalkToMBTI */ = {
+		BA2C05C326B0931B007011A5 /* TalkToMBTI */ = {
 			isa = PBXGroup;
 			children = (
-				BA2C058C26B086A8007011A5 /* AppDelegate.swift */,
-				BA2C058E26B086A8007011A5 /* ViewController.swift */,
-				BA2C059026B086AA007011A5 /* Assets.xcassets */,
-				BA2C059226B086AA007011A5 /* Main.storyboard */,
-				BA2C059526B086AA007011A5 /* Info.plist */,
-				BA2C059626B086AA007011A5 /* TalkToMBTI.entitlements */,
+				BA95D16E26B09AD500EEA476 /* TalkToMBTI.entitlements */,
+				BA95D17326B09CC800EEA476 /* Mapper */,
+				BA2C05FE26B09A55007011A5 /* Repository */,
+				BA2C05F926B09A1E007011A5 /* Service */,
+				BA2C05F426B09567007011A5 /* Login */,
+				BA2C05C426B0931B007011A5 /* AppDelegate.swift */,
+				BA2C05CD26B0931D007011A5 /* Assets.xcassets */,
+				BA2C05CF26B0931D007011A5 /* LaunchScreen.storyboard */,
+				BA2C05D226B0931D007011A5 /* Info.plist */,
 			);
 			path = TalkToMBTI;
 			sourceTree = "<group>";
 		};
-		BA2C059E26B086AA007011A5 /* TalkToMBTITests */ = {
+		BA2C05DA26B0931D007011A5 /* TalkToMBTITests */ = {
 			isa = PBXGroup;
 			children = (
-				BA2C059F26B086AA007011A5 /* TalkToMBTITests.swift */,
-				BA2C05A126B086AA007011A5 /* Info.plist */,
+				BA2C05DB26B0931D007011A5 /* TalkToMBTITests.swift */,
+				BA2C05DD26B0931D007011A5 /* Info.plist */,
 			);
 			path = TalkToMBTITests;
 			sourceTree = "<group>";
 		};
-		BA2C05A926B086AA007011A5 /* TalkToMBTIUITests */ = {
+		BA2C05E526B0931D007011A5 /* TalkToMBTIUITests */ = {
 			isa = PBXGroup;
 			children = (
-				BA2C05AA26B086AA007011A5 /* TalkToMBTIUITests.swift */,
-				BA2C05AC26B086AA007011A5 /* Info.plist */,
+				BA2C05E626B0931D007011A5 /* TalkToMBTIUITests.swift */,
+				BA2C05E826B0931D007011A5 /* Info.plist */,
 			);
 			path = TalkToMBTIUITests;
+			sourceTree = "<group>";
+		};
+		BA2C05F426B09567007011A5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BA2C05C826B0931B007011A5 /* LoginViewController.swift */,
+				BA2C05F526B09573007011A5 /* LoginViewModel.swift */,
+				BA2C05F726B095A1007011A5 /* LoginModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BA2C05F926B09A1E007011A5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BA2C05FC26B09A4F007011A5 /* AuthService.swift */,
+				BA95D16F26B09B6F00EEA476 /* ServiceProviderType.swift */,
+				BA95D17126B09C3400EEA476 /* BaseService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BA2C05FE26B09A55007011A5 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				BA2C05FF26B09A60007011A5 /* APIRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		BA95D17326B09CC800EEA476 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BA2C058826B086A8007011A5 /* TalkToMBTI */ = {
+		BA2C05C026B0931B007011A5 /* TalkToMBTI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BA2C05AF26B086AA007011A5 /* Build configuration list for PBXNativeTarget "TalkToMBTI" */;
+			buildConfigurationList = BA2C05EB26B0931D007011A5 /* Build configuration list for PBXNativeTarget "TalkToMBTI" */;
 			buildPhases = (
-				BA2C058526B086A8007011A5 /* Sources */,
-				BA2C058626B086A8007011A5 /* Frameworks */,
-				BA2C058726B086A8007011A5 /* Resources */,
+				C97C93C613B2FDB0091DA331 /* [CP] Check Pods Manifest.lock */,
+				BA2C05BD26B0931B007011A5 /* Sources */,
+				BA2C05BE26B0931B007011A5 /* Frameworks */,
+				BA2C05BF26B0931B007011A5 /* Resources */,
+				92E42C1DF3C632E59B293EC1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,68 +233,72 @@
 			);
 			name = TalkToMBTI;
 			productName = TalkToMBTI;
-			productReference = BA2C058926B086A8007011A5 /* TalkToMBTI.app */;
+			productReference = BA2C05C126B0931B007011A5 /* TalkToMBTI.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BA2C059A26B086AA007011A5 /* TalkToMBTITests */ = {
+		BA2C05D626B0931D007011A5 /* TalkToMBTITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BA2C05B226B086AA007011A5 /* Build configuration list for PBXNativeTarget "TalkToMBTITests" */;
+			buildConfigurationList = BA2C05EE26B0931D007011A5 /* Build configuration list for PBXNativeTarget "TalkToMBTITests" */;
 			buildPhases = (
-				BA2C059726B086AA007011A5 /* Sources */,
-				BA2C059826B086AA007011A5 /* Frameworks */,
-				BA2C059926B086AA007011A5 /* Resources */,
+				999BD322C01E21BE58CA0C35 /* [CP] Check Pods Manifest.lock */,
+				BA2C05D326B0931D007011A5 /* Sources */,
+				BA2C05D426B0931D007011A5 /* Frameworks */,
+				BA2C05D526B0931D007011A5 /* Resources */,
+				FC563266FB2DDD17BA5618FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BA2C059D26B086AA007011A5 /* PBXTargetDependency */,
+				BA2C05D926B0931D007011A5 /* PBXTargetDependency */,
 			);
 			name = TalkToMBTITests;
 			productName = TalkToMBTITests;
-			productReference = BA2C059B26B086AA007011A5 /* TalkToMBTITests.xctest */;
+			productReference = BA2C05D726B0931D007011A5 /* TalkToMBTITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BA2C05A526B086AA007011A5 /* TalkToMBTIUITests */ = {
+		BA2C05E126B0931D007011A5 /* TalkToMBTIUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BA2C05B526B086AA007011A5 /* Build configuration list for PBXNativeTarget "TalkToMBTIUITests" */;
+			buildConfigurationList = BA2C05F126B0931D007011A5 /* Build configuration list for PBXNativeTarget "TalkToMBTIUITests" */;
 			buildPhases = (
-				BA2C05A226B086AA007011A5 /* Sources */,
-				BA2C05A326B086AA007011A5 /* Frameworks */,
-				BA2C05A426B086AA007011A5 /* Resources */,
+				371D76A159C567A54054031B /* [CP] Check Pods Manifest.lock */,
+				BA2C05DE26B0931D007011A5 /* Sources */,
+				BA2C05DF26B0931D007011A5 /* Frameworks */,
+				BA2C05E026B0931D007011A5 /* Resources */,
+				7F3D185EA23E99CD694C49B9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BA2C05A826B086AA007011A5 /* PBXTargetDependency */,
+				BA2C05E426B0931D007011A5 /* PBXTargetDependency */,
 			);
 			name = TalkToMBTIUITests;
 			productName = TalkToMBTIUITests;
-			productReference = BA2C05A626B086AA007011A5 /* TalkToMBTIUITests.xctest */;
+			productReference = BA2C05E226B0931D007011A5 /* TalkToMBTIUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BA2C058126B086A8007011A5 /* Project object */ = {
+		BA2C05B926B0931B007011A5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					BA2C058826B086A8007011A5 = {
+					BA2C05C026B0931B007011A5 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
-					BA2C059A26B086AA007011A5 = {
+					BA2C05D626B0931D007011A5 = {
 						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = BA2C058826B086A8007011A5;
+						TestTargetID = BA2C05C026B0931B007011A5;
 					};
-					BA2C05A526B086AA007011A5 = {
+					BA2C05E126B0931D007011A5 = {
 						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = BA2C058826B086A8007011A5;
+						TestTargetID = BA2C05C026B0931B007011A5;
 					};
 				};
 			};
-			buildConfigurationList = BA2C058426B086A8007011A5 /* Build configuration list for PBXProject "TalkToMBTI" */;
+			buildConfigurationList = BA2C05BC26B0931B007011A5 /* Build configuration list for PBXProject "TalkToMBTI" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -210,36 +306,36 @@
 				en,
 				Base,
 			);
-			mainGroup = BA2C058026B086A8007011A5;
-			productRefGroup = BA2C058A26B086A8007011A5 /* Products */;
+			mainGroup = BA2C05B826B0931B007011A5;
+			productRefGroup = BA2C05C226B0931B007011A5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BA2C058826B086A8007011A5 /* TalkToMBTI */,
-				BA2C059A26B086AA007011A5 /* TalkToMBTITests */,
-				BA2C05A526B086AA007011A5 /* TalkToMBTIUITests */,
+				BA2C05C026B0931B007011A5 /* TalkToMBTI */,
+				BA2C05D626B0931D007011A5 /* TalkToMBTITests */,
+				BA2C05E126B0931D007011A5 /* TalkToMBTIUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BA2C058726B086A8007011A5 /* Resources */ = {
+		BA2C05BF26B0931B007011A5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA2C059126B086AA007011A5 /* Assets.xcassets in Resources */,
-				BA2C059426B086AA007011A5 /* Main.storyboard in Resources */,
+				BA2C05D126B0931D007011A5 /* LaunchScreen.storyboard in Resources */,
+				BA2C05CE26B0931D007011A5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA2C059926B086AA007011A5 /* Resources */ = {
+		BA2C05D526B0931D007011A5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA2C05A426B086AA007011A5 /* Resources */ = {
+		BA2C05E026B0931D007011A5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -248,60 +344,186 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		371D76A159C567A54054031B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TalkToMBTI-TalkToMBTIUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F3D185EA23E99CD694C49B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TalkToMBTI-TalkToMBTIUITests/Pods-TalkToMBTI-TalkToMBTIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TalkToMBTI-TalkToMBTIUITests/Pods-TalkToMBTI-TalkToMBTIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TalkToMBTI-TalkToMBTIUITests/Pods-TalkToMBTI-TalkToMBTIUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92E42C1DF3C632E59B293EC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TalkToMBTI/Pods-TalkToMBTI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TalkToMBTI/Pods-TalkToMBTI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TalkToMBTI/Pods-TalkToMBTI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		999BD322C01E21BE58CA0C35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TalkToMBTITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C97C93C613B2FDB0091DA331 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TalkToMBTI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC563266FB2DDD17BA5618FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TalkToMBTITests/Pods-TalkToMBTITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TalkToMBTITests/Pods-TalkToMBTITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TalkToMBTITests/Pods-TalkToMBTITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		BA2C058526B086A8007011A5 /* Sources */ = {
+		BA2C05BD26B0931B007011A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA2C058F26B086A8007011A5 /* ViewController.swift in Sources */,
-				BA2C058D26B086A8007011A5 /* AppDelegate.swift in Sources */,
+				BA95D17226B09C3400EEA476 /* BaseService.swift in Sources */,
+				BA2C05C926B0931B007011A5 /* LoginViewController.swift in Sources */,
+				BA2C05F826B095A1007011A5 /* LoginModel.swift in Sources */,
+				BA95D17026B09B6F00EEA476 /* ServiceProviderType.swift in Sources */,
+				BA2C060026B09A60007011A5 /* APIRepository.swift in Sources */,
+				BA2C05FD26B09A4F007011A5 /* AuthService.swift in Sources */,
+				BA2C05C526B0931B007011A5 /* AppDelegate.swift in Sources */,
+				BA2C05F626B09573007011A5 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA2C059726B086AA007011A5 /* Sources */ = {
+		BA2C05D326B0931D007011A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA2C05A026B086AA007011A5 /* TalkToMBTITests.swift in Sources */,
+				BA2C05DC26B0931D007011A5 /* TalkToMBTITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA2C05A226B086AA007011A5 /* Sources */ = {
+		BA2C05DE26B0931D007011A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA2C05AB26B086AA007011A5 /* TalkToMBTIUITests.swift in Sources */,
+				BA2C05E726B0931D007011A5 /* TalkToMBTIUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BA2C059D26B086AA007011A5 /* PBXTargetDependency */ = {
+		BA2C05D926B0931D007011A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BA2C058826B086A8007011A5 /* TalkToMBTI */;
-			targetProxy = BA2C059C26B086AA007011A5 /* PBXContainerItemProxy */;
+			target = BA2C05C026B0931B007011A5 /* TalkToMBTI */;
+			targetProxy = BA2C05D826B0931D007011A5 /* PBXContainerItemProxy */;
 		};
-		BA2C05A826B086AA007011A5 /* PBXTargetDependency */ = {
+		BA2C05E426B0931D007011A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BA2C058826B086A8007011A5 /* TalkToMBTI */;
-			targetProxy = BA2C05A726B086AA007011A5 /* PBXContainerItemProxy */;
+			target = BA2C05C026B0931B007011A5 /* TalkToMBTI */;
+			targetProxy = BA2C05E326B0931D007011A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BA2C059226B086AA007011A5 /* Main.storyboard */ = {
+		BA2C05CF26B0931D007011A5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BA2C059326B086AA007011A5 /* Base */,
+				BA2C05D026B0931D007011A5 /* Base */,
 			);
-			name = Main.storyboard;
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		BA2C05AD26B086AA007011A5 /* Debug */ = {
+		BA2C05E926B0931D007011A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -352,17 +574,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		BA2C05AE26B086AA007011A5 /* Release */ = {
+		BA2C05EA26B0931D007011A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -407,137 +629,144 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		BA2C05B026B086AA007011A5 /* Debug */ = {
+		BA2C05EC26B0931D007011A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF721174B8AF648BEE3FFD98 /* Pods-TalkToMBTI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TalkToMBTI/TalkToMBTI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = S3QQ63V4S9;
-				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = TalkToMBTI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
+					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.iospanda.TalkToMBTI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		BA2C05B126B086AA007011A5 /* Release */ = {
+		BA2C05ED26B0931D007011A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A062C4A3F3CE1FDE39E10776 /* Pods-TalkToMBTI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TalkToMBTI/TalkToMBTI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = S3QQ63V4S9;
-				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = TalkToMBTI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
+					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.iospanda.TalkToMBTI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		BA2C05B326B086AA007011A5 /* Debug */ = {
+		BA2C05EF26B0931D007011A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCBE8EF4CB7267D92C8DB997 /* Pods-TalkToMBTITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = S3QQ63V4S9;
 				INFOPLIST_FILE = TalkToMBTITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.iospanda.TalkToMBTITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TalkToMBTI.app/Contents/MacOS/TalkToMBTI";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TalkToMBTI.app/TalkToMBTI";
 			};
 			name = Debug;
 		};
-		BA2C05B426B086AA007011A5 /* Release */ = {
+		BA2C05F026B0931D007011A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEAD06779C0AF920D5BEA983 /* Pods-TalkToMBTITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = S3QQ63V4S9;
 				INFOPLIST_FILE = TalkToMBTITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.iospanda.TalkToMBTITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TalkToMBTI.app/Contents/MacOS/TalkToMBTI";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TalkToMBTI.app/TalkToMBTI";
 			};
 			name = Release;
 		};
-		BA2C05B626B086AA007011A5 /* Debug */ = {
+		BA2C05F226B0931D007011A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F10EB87A4E8E05D6B4049B0B /* Pods-TalkToMBTI-TalkToMBTIUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = S3QQ63V4S9;
 				INFOPLIST_FILE = TalkToMBTIUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.iospanda.TalkToMBTIUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TalkToMBTI;
 			};
 			name = Debug;
 		};
-		BA2C05B726B086AA007011A5 /* Release */ = {
+		BA2C05F326B0931D007011A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF2FF5D835C0367B4CE3DEEF /* Pods-TalkToMBTI-TalkToMBTIUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = S3QQ63V4S9;
 				INFOPLIST_FILE = TalkToMBTIUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.iospanda.TalkToMBTIUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TalkToMBTI;
 			};
 			name = Release;
@@ -545,43 +774,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BA2C058426B086A8007011A5 /* Build configuration list for PBXProject "TalkToMBTI" */ = {
+		BA2C05BC26B0931B007011A5 /* Build configuration list for PBXProject "TalkToMBTI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BA2C05AD26B086AA007011A5 /* Debug */,
-				BA2C05AE26B086AA007011A5 /* Release */,
+				BA2C05E926B0931D007011A5 /* Debug */,
+				BA2C05EA26B0931D007011A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BA2C05AF26B086AA007011A5 /* Build configuration list for PBXNativeTarget "TalkToMBTI" */ = {
+		BA2C05EB26B0931D007011A5 /* Build configuration list for PBXNativeTarget "TalkToMBTI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BA2C05B026B086AA007011A5 /* Debug */,
-				BA2C05B126B086AA007011A5 /* Release */,
+				BA2C05EC26B0931D007011A5 /* Debug */,
+				BA2C05ED26B0931D007011A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BA2C05B226B086AA007011A5 /* Build configuration list for PBXNativeTarget "TalkToMBTITests" */ = {
+		BA2C05EE26B0931D007011A5 /* Build configuration list for PBXNativeTarget "TalkToMBTITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BA2C05B326B086AA007011A5 /* Debug */,
-				BA2C05B426B086AA007011A5 /* Release */,
+				BA2C05EF26B0931D007011A5 /* Debug */,
+				BA2C05F026B0931D007011A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BA2C05B526B086AA007011A5 /* Build configuration list for PBXNativeTarget "TalkToMBTIUITests" */ = {
+		BA2C05F126B0931D007011A5 /* Build configuration list for PBXNativeTarget "TalkToMBTIUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BA2C05B626B086AA007011A5 /* Debug */,
-				BA2C05B726B086AA007011A5 /* Release */,
+				BA2C05F226B0931D007011A5 /* Debug */,
+				BA2C05F326B0931D007011A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = BA2C058126B086A8007011A5 /* Project object */;
+	rootObject = BA2C05B926B0931B007011A5 /* Project object */;
 }
