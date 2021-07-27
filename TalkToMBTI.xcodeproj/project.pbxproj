@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA2C058D26B086A8007011A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2C058C26B086A8007011A5 /* AppDelegate.swift */; };
+		BA2C058F26B086A8007011A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2C058E26B086A8007011A5 /* ViewController.swift */; };
+		BA2C059126B086AA007011A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2C059026B086AA007011A5 /* Assets.xcassets */; };
+		BA2C059426B086AA007011A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2C059226B086AA007011A5 /* Main.storyboard */; };
+		BA2C05A026B086AA007011A5 /* TalkToMBTITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2C059F26B086AA007011A5 /* TalkToMBTITests.swift */; };
+		BA2C05AB26B086AA007011A5 /* TalkToMBTIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2C05AA26B086AA007011A5 /* TalkToMBTIUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA2C059C26B086AA007011A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA2C058126B086A8007011A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA2C058826B086A8007011A5;
+			remoteInfo = TalkToMBTI;
+		};
+		BA2C05A726B086AA007011A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA2C058126B086A8007011A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA2C058826B086A8007011A5;
+			remoteInfo = TalkToMBTI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA2C058926B086A8007011A5 /* TalkToMBTI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkToMBTI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA2C058C26B086A8007011A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA2C058E26B086A8007011A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA2C059026B086AA007011A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA2C059326B086AA007011A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA2C059526B086AA007011A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA2C059626B086AA007011A5 /* TalkToMBTI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TalkToMBTI.entitlements; sourceTree = "<group>"; };
+		BA2C059B26B086AA007011A5 /* TalkToMBTITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalkToMBTITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA2C059F26B086AA007011A5 /* TalkToMBTITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkToMBTITests.swift; sourceTree = "<group>"; };
+		BA2C05A126B086AA007011A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA2C05A626B086AA007011A5 /* TalkToMBTIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalkToMBTIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA2C05AA26B086AA007011A5 /* TalkToMBTIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkToMBTIUITests.swift; sourceTree = "<group>"; };
+		BA2C05AC26B086AA007011A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA2C058626B086A8007011A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA2C059826B086AA007011A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA2C05A326B086AA007011A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA2C058026B086A8007011A5 = {
+			isa = PBXGroup;
+			children = (
+				BA2C058B26B086A8007011A5 /* TalkToMBTI */,
+				BA2C059E26B086AA007011A5 /* TalkToMBTITests */,
+				BA2C05A926B086AA007011A5 /* TalkToMBTIUITests */,
+				BA2C058A26B086A8007011A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA2C058A26B086A8007011A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA2C058926B086A8007011A5 /* TalkToMBTI.app */,
+				BA2C059B26B086AA007011A5 /* TalkToMBTITests.xctest */,
+				BA2C05A626B086AA007011A5 /* TalkToMBTIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA2C058B26B086A8007011A5 /* TalkToMBTI */ = {
+			isa = PBXGroup;
+			children = (
+				BA2C058C26B086A8007011A5 /* AppDelegate.swift */,
+				BA2C058E26B086A8007011A5 /* ViewController.swift */,
+				BA2C059026B086AA007011A5 /* Assets.xcassets */,
+				BA2C059226B086AA007011A5 /* Main.storyboard */,
+				BA2C059526B086AA007011A5 /* Info.plist */,
+				BA2C059626B086AA007011A5 /* TalkToMBTI.entitlements */,
+			);
+			path = TalkToMBTI;
+			sourceTree = "<group>";
+		};
+		BA2C059E26B086AA007011A5 /* TalkToMBTITests */ = {
+			isa = PBXGroup;
+			children = (
+				BA2C059F26B086AA007011A5 /* TalkToMBTITests.swift */,
+				BA2C05A126B086AA007011A5 /* Info.plist */,
+			);
+			path = TalkToMBTITests;
+			sourceTree = "<group>";
+		};
+		BA2C05A926B086AA007011A5 /* TalkToMBTIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BA2C05AA26B086AA007011A5 /* TalkToMBTIUITests.swift */,
+				BA2C05AC26B086AA007011A5 /* Info.plist */,
+			);
+			path = TalkToMBTIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA2C058826B086A8007011A5 /* TalkToMBTI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA2C05AF26B086AA007011A5 /* Build configuration list for PBXNativeTarget "TalkToMBTI" */;
+			buildPhases = (
+				BA2C058526B086A8007011A5 /* Sources */,
+				BA2C058626B086A8007011A5 /* Frameworks */,
+				BA2C058726B086A8007011A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TalkToMBTI;
+			productName = TalkToMBTI;
+			productReference = BA2C058926B086A8007011A5 /* TalkToMBTI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA2C059A26B086AA007011A5 /* TalkToMBTITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA2C05B226B086AA007011A5 /* Build configuration list for PBXNativeTarget "TalkToMBTITests" */;
+			buildPhases = (
+				BA2C059726B086AA007011A5 /* Sources */,
+				BA2C059826B086AA007011A5 /* Frameworks */,
+				BA2C059926B086AA007011A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA2C059D26B086AA007011A5 /* PBXTargetDependency */,
+			);
+			name = TalkToMBTITests;
+			productName = TalkToMBTITests;
+			productReference = BA2C059B26B086AA007011A5 /* TalkToMBTITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BA2C05A526B086AA007011A5 /* TalkToMBTIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA2C05B526B086AA007011A5 /* Build configuration list for PBXNativeTarget "TalkToMBTIUITests" */;
+			buildPhases = (
+				BA2C05A226B086AA007011A5 /* Sources */,
+				BA2C05A326B086AA007011A5 /* Frameworks */,
+				BA2C05A426B086AA007011A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA2C05A826B086AA007011A5 /* PBXTargetDependency */,
+			);
+			name = TalkToMBTIUITests;
+			productName = TalkToMBTIUITests;
+			productReference = BA2C05A626B086AA007011A5 /* TalkToMBTIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA2C058126B086A8007011A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					BA2C058826B086A8007011A5 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					BA2C059A26B086AA007011A5 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = BA2C058826B086A8007011A5;
+					};
+					BA2C05A526B086AA007011A5 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = BA2C058826B086A8007011A5;
+					};
+				};
+			};
+			buildConfigurationList = BA2C058426B086A8007011A5 /* Build configuration list for PBXProject "TalkToMBTI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA2C058026B086A8007011A5;
+			productRefGroup = BA2C058A26B086A8007011A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA2C058826B086A8007011A5 /* TalkToMBTI */,
+				BA2C059A26B086AA007011A5 /* TalkToMBTITests */,
+				BA2C05A526B086AA007011A5 /* TalkToMBTIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA2C058726B086A8007011A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA2C059126B086AA007011A5 /* Assets.xcassets in Resources */,
+				BA2C059426B086AA007011A5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA2C059926B086AA007011A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA2C05A426B086AA007011A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA2C058526B086A8007011A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA2C058F26B086A8007011A5 /* ViewController.swift in Sources */,
+				BA2C058D26B086A8007011A5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA2C059726B086AA007011A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA2C05A026B086AA007011A5 /* TalkToMBTITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA2C05A226B086AA007011A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA2C05AB26B086AA007011A5 /* TalkToMBTIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA2C059D26B086AA007011A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA2C058826B086A8007011A5 /* TalkToMBTI */;
+			targetProxy = BA2C059C26B086AA007011A5 /* PBXContainerItemProxy */;
+		};
+		BA2C05A826B086AA007011A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA2C058826B086A8007011A5 /* TalkToMBTI */;
+			targetProxy = BA2C05A726B086AA007011A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA2C059226B086AA007011A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA2C059326B086AA007011A5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA2C05AD26B086AA007011A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA2C05AE26B086AA007011A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BA2C05B026B086AA007011A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TalkToMBTI/TalkToMBTI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S3QQ63V4S9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = TalkToMBTI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.iospanda.TalkToMBTI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BA2C05B126B086AA007011A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TalkToMBTI/TalkToMBTI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S3QQ63V4S9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = TalkToMBTI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.iospanda.TalkToMBTI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BA2C05B326B086AA007011A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S3QQ63V4S9;
+				INFOPLIST_FILE = TalkToMBTITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.iospanda.TalkToMBTITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TalkToMBTI.app/Contents/MacOS/TalkToMBTI";
+			};
+			name = Debug;
+		};
+		BA2C05B426B086AA007011A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S3QQ63V4S9;
+				INFOPLIST_FILE = TalkToMBTITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.iospanda.TalkToMBTITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TalkToMBTI.app/Contents/MacOS/TalkToMBTI";
+			};
+			name = Release;
+		};
+		BA2C05B626B086AA007011A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S3QQ63V4S9;
+				INFOPLIST_FILE = TalkToMBTIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.iospanda.TalkToMBTIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = TalkToMBTI;
+			};
+			name = Debug;
+		};
+		BA2C05B726B086AA007011A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S3QQ63V4S9;
+				INFOPLIST_FILE = TalkToMBTIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.iospanda.TalkToMBTIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = TalkToMBTI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA2C058426B086A8007011A5 /* Build configuration list for PBXProject "TalkToMBTI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA2C05AD26B086AA007011A5 /* Debug */,
+				BA2C05AE26B086AA007011A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA2C05AF26B086AA007011A5 /* Build configuration list for PBXNativeTarget "TalkToMBTI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA2C05B026B086AA007011A5 /* Debug */,
+				BA2C05B126B086AA007011A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA2C05B226B086AA007011A5 /* Build configuration list for PBXNativeTarget "TalkToMBTITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA2C05B326B086AA007011A5 /* Debug */,
+				BA2C05B426B086AA007011A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA2C05B526B086AA007011A5 /* Build configuration list for PBXNativeTarget "TalkToMBTIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA2C05B626B086AA007011A5 /* Debug */,
+				BA2C05B726B086AA007011A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA2C058126B086A8007011A5 /* Project object */;
+}
