@@ -8,6 +8,7 @@
 import RxSwift
 import Amplify
 import AmplifyPlugins
+import AWSMobileClient
 
 enum SocialLoginType {
   case facebook
@@ -17,10 +18,12 @@ enum SocialLoginType {
 protocol AuthServiceType: class {
   func socialSignInWithWebUI(type: SocialLoginType) -> Single<Void>
   func signOutGlobally()
+  func checkCurrentUserStateInAWS()
   //    func saveUserFromRealm(user: User) -> Observable<User>
 }
 
 final class AuthService: BaseService, AuthServiceType {
+  
   func socialSignInWithWebUI(type: SocialLoginType) -> Single<Void> {
     return Single<Void>.create { observer in
       
@@ -40,16 +43,25 @@ final class AuthService: BaseService, AuthServiceType {
   }
   
   func signOutGlobally() {
-      Amplify.Auth.signOut(options: .init(globalSignOut: true)) { result in
-          switch result {
-          case .success:
-              print("Successfully signed out")
-          case .failure(let error):
-              print("Sign out failed with error \(error)")
-          }
-      }
+    AWSMobileClient.default().signOut(options: SignOutOptions(signOutGlobally: true)) { (error) in
+        print("Error: \(error.debugDescription)")
+    }
   }
   
+  func checkCurrentUserStateInAWS() {
+    switch (AWSMobileClient.default().currentUserState) {
+    case .signedIn:
+      DispatchQueue.main.async {
+        print("Logged In")
+      }
+    case .signedOut:
+      DispatchQueue.main.async {
+        print("Signed Out")
+      }
+    default:
+      AWSMobileClient.default().signOut()
+    }
+  }
   //    func saveUserFromRealm(user: User) -> Observable<User> {
   //        <#code#>
   //    }

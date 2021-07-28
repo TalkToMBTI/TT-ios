@@ -14,6 +14,7 @@ protocol LoginViewModelType: AnyObject {
   
   func socialSignInWithWebUI(type: SocialLoginType)
   func signOutGlobally()
+  func checkCurrentUserState()
 }
 
 class LoginViewModel: LoginViewModelType {
@@ -36,10 +37,13 @@ class LoginViewModel: LoginViewModelType {
         self?.resultOfSocialSignIn.onNext(false)
       }
       .disposed(by: disposeBag)
-
   }
   
   func signOutGlobally() {
     provider.authService.signOutGlobally()
+  }
+  
+  func checkCurrentUserState() {
+    provider.authService.checkCurrentUserStateInAWS()
   }
 }

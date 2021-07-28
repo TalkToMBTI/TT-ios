@@ -24,6 +24,7 @@
 		BA95D17226B09C3400EEA476 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA95D17126B09C3400EEA476 /* BaseService.swift */; };
 		BA95D18326B1B3A900EEA476 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = BA95D18126B1B3A900EEA476 /* amplifyconfiguration.json */; };
 		BA95D18426B1B3A900EEA476 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = BA95D18226B1B3A900EEA476 /* awsconfiguration.json */; };
+		BA95D18626B1E71700EEA476 /* LoginViewController+SIWA.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA95D18526B1E71700EEA476 /* LoginViewController+SIWA.swift */; };
 		C480BF1A6B52FB2990596EC3 /* Pods_TalkToMBTI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56AED899A24829C3952F567E /* Pods_TalkToMBTI.framework */; };
 		CB9CDC9D921665B27E3B6CC3 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = BD48F96C0D45883D17463DAF /* awsconfiguration.json */; };
 /* End PBXBuildFile section */
@@ -72,6 +73,7 @@
 		BA95D17126B09C3400EEA476 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		BA95D18126B1B3A900EEA476 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
 		BA95D18226B1B3A900EEA476 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
+		BA95D18526B1E71700EEA476 /* LoginViewController+SIWA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+SIWA.swift"; sourceTree = "<group>"; };
 		BD48F96C0D45883D17463DAF /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		BF2FF5D835C0367B4CE3DEEF /* Pods-TalkToMBTI-TalkToMBTIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkToMBTI-TalkToMBTIUITests.release.xcconfig"; path = "Target Support Files/Pods-TalkToMBTI-TalkToMBTIUITests/Pods-TalkToMBTI-TalkToMBTIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CCBE8EF4CB7267D92C8DB997 /* Pods-TalkToMBTITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkToMBTITests.debug.xcconfig"; path = "Target Support Files/Pods-TalkToMBTITests/Pods-TalkToMBTITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				BA2C05C826B0931B007011A5 /* LoginViewController.swift */,
+				BA95D18526B1E71700EEA476 /* LoginViewController+SIWA.swift */,
 				BA2C05F526B09573007011A5 /* LoginViewModel.swift */,
 				BA2C05F726B095A1007011A5 /* LoginModel.swift */,
 			);
@@ -501,6 +504,7 @@
 				BA2C05FD26B09A4F007011A5 /* AuthService.swift in Sources */,
 				BA2C05C526B0931B007011A5 /* AppDelegate.swift in Sources */,
 				BA2C05F626B09573007011A5 /* LoginViewModel.swift in Sources */,
+				BA95D18626B1E71700EEA476 /* LoginViewController+SIWA.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -673,7 +677,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S3QQ63V4S9;
 				INFOPLIST_FILE = TalkToMBTI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -695,7 +699,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S3QQ63V4S9;
 				INFOPLIST_FILE = TalkToMBTI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
