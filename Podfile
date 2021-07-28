@@ -15,10 +15,14 @@ target 'TalkToMBTI' do
   pod 'RxAlamofire'
   pod 'RxKeyboard'
   pod 'RxGesture'
+  
+  pod 'SnapKit'
+  pod 'Then'
 
   pod 'Amplify'
   pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
 
+  pod 'AWSMobileClient'
 
   target 'TalkToMBTITests' do
     inherit! :search_paths

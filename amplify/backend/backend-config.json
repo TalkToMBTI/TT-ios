@@ -1,7 +1,8 @@
 {
   "auth": {
-    "talktombtia86baa41": {
+    "talktombtida2a3843": {
       "service": "Cognito",
+      "serviceType": "imported",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
       "customAuth": false

@@ -27,7 +27,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     fetchCurrentAuthSession()
     window = UIWindow(frame: UIScreen.main.bounds)
     window?.backgroundColor = .white
-    window?.rootViewController = LoginViewController()
+    
+    let loginVC = LoginViewController()
+    loginVC.viewModel = LoginViewModel(provider: ServiceProvider())
+    
+    window?.rootViewController = loginVC
     window?.makeKeyAndVisible()
     return true
   }

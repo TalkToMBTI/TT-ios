@@ -6,7 +6,12 @@
 //
 
 import Foundation
+import RxSwift
 
-class LoginModel {
+protocol LoginModelType: AnyObject {
+  
+}
+
+class LoginModel: LoginModelType {
   
 }

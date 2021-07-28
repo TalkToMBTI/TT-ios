@@ -13,7 +13,12 @@
     },
     "categories": {
       "auth": {
-        "talktombtia86baa41": {}
+        "talktombtida2a3843": {
+          "userPoolId": "ap-northeast-2_9av4Nb3Wh",
+          "userPoolName": "TT-MBTI",
+          "webClientId": "3nctn0v6rm3pi697gci57455kt",
+          "nativeClientId": "1gk7bshc169pdjc2qjvq8fq99e"
+        }
       }
     }
   }

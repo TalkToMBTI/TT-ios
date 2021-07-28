@@ -56,11 +56,14 @@ PODS:
   - RxSwift (6.2.0)
   - RxTest (6.2.0):
     - RxSwift (= 6.2.0)
+  - SnapKit (5.0.1)
+  - Then (2.7.0)
 
 DEPENDENCIES:
   - Alamofire
   - Amplify
   - AmplifyPlugins/AWSCognitoAuthPlugin
+  - AWSMobileClient
   - Nimble
   - Quick
   - RxAlamofire
@@ -72,6 +75,8 @@ DEPENDENCIES:
   - RxOptional
   - RxSwift (= 6.2.0)
   - RxTest (= 6.2.0)
+  - SnapKit
+  - Then
 
 SPEC REPOS:
   trunk:
@@ -97,6 +102,8 @@ SPEC REPOS:
     - RxRelay
     - RxSwift
     - RxTest
+    - SnapKit
+    - Then
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
@@ -121,7 +128,9 @@ SPEC CHECKSUMS:
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
   RxTest: 0c692fa672b694373ba86d2b00033595297a2831
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
-PODFILE CHECKSUM: 334d45a5d5b67a261eb8026144f99874f4f95d14
+PODFILE CHECKSUM: 000f1e8dbab4cf030c6b4faedc4d29fca0a5d4aa
 
 COCOAPODS: 1.10.1
