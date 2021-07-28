@@ -16,6 +16,9 @@ target 'TalkToMBTI' do
   pod 'RxKeyboard'
   pod 'RxGesture'
 
+  pod 'Amplify'
+  pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
+
 
   target 'TalkToMBTITests' do
     inherit! :search_paths

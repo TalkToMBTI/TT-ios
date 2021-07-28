@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18C6D5286C6A0DE2342CE8F9 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 04D13CD2CD2E7F333378EEF7 /* amplifyconfiguration.json */; };
 		4B67DA46517436A90780050A /* Pods_TalkToMBTI_TalkToMBTIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BF688F406BFE35EFCE1824 /* Pods_TalkToMBTI_TalkToMBTIUITests.framework */; };
 		B9F7DFB8872335C2581F018E /* Pods_TalkToMBTITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B9D9CE557154894E0B4E8C /* Pods_TalkToMBTITests.framework */; };
 		BA2C05C526B0931B007011A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2C05C426B0931B007011A5 /* AppDelegate.swift */; };
@@ -21,7 +22,10 @@
 		BA2C060026B09A60007011A5 /* APIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2C05FF26B09A60007011A5 /* APIRepository.swift */; };
 		BA95D17026B09B6F00EEA476 /* ServiceProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA95D16F26B09B6F00EEA476 /* ServiceProviderType.swift */; };
 		BA95D17226B09C3400EEA476 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA95D17126B09C3400EEA476 /* BaseService.swift */; };
+		BA95D18326B1B3A900EEA476 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = BA95D18126B1B3A900EEA476 /* amplifyconfiguration.json */; };
+		BA95D18426B1B3A900EEA476 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = BA95D18226B1B3A900EEA476 /* awsconfiguration.json */; };
 		C480BF1A6B52FB2990596EC3 /* Pods_TalkToMBTI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56AED899A24829C3952F567E /* Pods_TalkToMBTI.framework */; };
+		CB9CDC9D921665B27E3B6CC3 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = BD48F96C0D45883D17463DAF /* awsconfiguration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04D13CD2CD2E7F333378EEF7 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		56AED899A24829C3952F567E /* Pods_TalkToMBTI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkToMBTI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B9D9CE557154894E0B4E8C /* Pods_TalkToMBTITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkToMBTITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A062C4A3F3CE1FDE39E10776 /* Pods-TalkToMBTI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkToMBTI.release.xcconfig"; path = "Target Support Files/Pods-TalkToMBTI/Pods-TalkToMBTI.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,6 +70,9 @@
 		BA95D16E26B09AD500EEA476 /* TalkToMBTI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TalkToMBTI.entitlements; sourceTree = "<group>"; };
 		BA95D16F26B09B6F00EEA476 /* ServiceProviderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderType.swift; sourceTree = "<group>"; };
 		BA95D17126B09C3400EEA476 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		BA95D18126B1B3A900EEA476 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
+		BA95D18226B1B3A900EEA476 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
+		BD48F96C0D45883D17463DAF /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		BF2FF5D835C0367B4CE3DEEF /* Pods-TalkToMBTI-TalkToMBTIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkToMBTI-TalkToMBTIUITests.release.xcconfig"; path = "Target Support Files/Pods-TalkToMBTI-TalkToMBTIUITests/Pods-TalkToMBTI-TalkToMBTIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CCBE8EF4CB7267D92C8DB997 /* Pods-TalkToMBTITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkToMBTITests.debug.xcconfig"; path = "Target Support Files/Pods-TalkToMBTITests/Pods-TalkToMBTITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D1BF688F406BFE35EFCE1824 /* Pods_TalkToMBTI_TalkToMBTIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkToMBTI_TalkToMBTIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +108,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F353B2A551CBC529F248AED /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				BD48F96C0D45883D17463DAF /* awsconfiguration.json */,
+				04D13CD2CD2E7F333378EEF7 /* amplifyconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			sourceTree = "<group>";
+		};
 		93CA5D141544C694A545B0DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +149,7 @@
 				BA2C05C226B0931B007011A5 /* Products */,
 				A6D7243A33EE4BBF06763C39 /* Pods */,
 				93CA5D141544C694A545B0DA /* Frameworks */,
+				1F353B2A551CBC529F248AED /* AmplifyConfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +166,8 @@
 		BA2C05C326B0931B007011A5 /* TalkToMBTI */ = {
 			isa = PBXGroup;
 			children = (
+				BA95D18126B1B3A900EEA476 /* amplifyconfiguration.json */,
+				BA95D18226B1B3A900EEA476 /* awsconfiguration.json */,
 				BA95D16E26B09AD500EEA476 /* TalkToMBTI.entitlements */,
 				BA95D17326B09CC800EEA476 /* Mapper */,
 				BA2C05FE26B09A55007011A5 /* Repository */,
@@ -323,7 +343,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA95D18426B1B3A900EEA476 /* awsconfiguration.json in Resources */,
 				BA2C05D126B0931D007011A5 /* LaunchScreen.storyboard in Resources */,
+				BA95D18326B1B3A900EEA476 /* amplifyconfiguration.json in Resources */,
 				BA2C05CE26B0931D007011A5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +354,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9CDC9D921665B27E3B6CC3 /* awsconfiguration.json in Resources */,
+				18C6D5286C6A0DE2342CE8F9 /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
