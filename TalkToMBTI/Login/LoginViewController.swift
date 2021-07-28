@@ -12,23 +12,27 @@ import Amplify
 import AmplifyPlugins
 import SnapKit
 import Then
+import AWSMobileClient
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController,
+                           ASAuthorizationControllerDelegate,
+                           ASAuthorizationControllerPresentationContextProviding {
+  
+
+  
   
   var viewModel: LoginViewModelType?
-  
-  // MARK: - UI properties
-  
-  lazy var signInWithAppleBtn = UIButton()
   
   override func viewDidLoad() {
     super.viewDidLoad()
     setupUI()
+    setupProviderLoginView()
+    
+    viewModel?.checkCurrentUserState()
   }
   
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
-    viewModel?.socialSignInWithWebUI(type: .apple)
   }
   
   func setupUI() {
@@ -36,7 +40,6 @@ class LoginViewController: UIViewController {
   }
   
   func bind() {
-    viewModel?.resultOfSocialSignIn
-      .filter { $0 }
   }
 }
+
