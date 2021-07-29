@@ -23,6 +23,7 @@ target 'TalkToMBTI' do
   pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
 
   pod 'AWSMobileClient'
+  pod 'AWSAPIGateway'
 
   target 'TalkToMBTITests' do
     inherit! :search_paths

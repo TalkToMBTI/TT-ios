@@ -10,6 +10,8 @@ PODS:
     - AWSCore (~> 2.24.0)
     - AWSMobileClient (~> 2.24.0)
     - AWSPluginsCore (= 1.12.0)
+  - AWSAPIGateway (2.24.4):
+    - AWSCore (= 2.24.4)
   - AWSAuthCore (2.24.4):
     - AWSCore (= 2.24.4)
   - AWSCognitoIdentityProvider (2.24.4):
@@ -63,6 +65,7 @@ DEPENDENCIES:
   - Alamofire
   - Amplify
   - AmplifyPlugins/AWSCognitoAuthPlugin
+  - AWSAPIGateway
   - AWSMobileClient
   - Nimble
   - Quick
@@ -83,6 +86,7 @@ SPEC REPOS:
     - Alamofire
     - Amplify
     - AmplifyPlugins
+    - AWSAPIGateway
     - AWSAuthCore
     - AWSCognitoIdentityProvider
     - AWSCognitoIdentityProviderASF
@@ -109,6 +113,7 @@ SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   Amplify: e8b40b8f4eba1b60cc6cd3334b0e5295c6eee6d1
   AmplifyPlugins: 77415f53580b454673f19331653e0511313f9e00
+  AWSAPIGateway: 92d3ad276a9594f97886a1642ce4917a76bd12c5
   AWSAuthCore: 208b14f036d66b839d828e516cc5c718f511a6dd
   AWSCognitoIdentityProvider: f85025540fc944ed6060736ea6ed8519b7684e67
   AWSCognitoIdentityProviderASF: bf64d310e6100af4434fb192a17cccf344901149
@@ -131,6 +136,6 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
-PODFILE CHECKSUM: 000f1e8dbab4cf030c6b4faedc4d29fca0a5d4aa
+PODFILE CHECKSUM: 326e187de7e6db36f0c80c2932205199e29fda13
 
 COCOAPODS: 1.10.1

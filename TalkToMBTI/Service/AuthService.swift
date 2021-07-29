@@ -8,7 +8,6 @@
 import RxSwift
 import Amplify
 import AmplifyPlugins
-import AWSMobileClient
 
 enum SocialLoginType {
   case facebook
@@ -16,7 +15,7 @@ enum SocialLoginType {
 }
 
 protocol AuthServiceType: class {
-  func socialSignInWithWebUI(type: SocialLoginType) -> Single<Void>
+  func socialSignInWithWebUI(type: AuthProvider, view: UIWindow) -> Single<Void>
   func signOutGlobally()
   func checkCurrentUserStateInAWS()
   //    func saveUserFromRealm(user: User) -> Observable<User>
@@ -24,16 +23,17 @@ protocol AuthServiceType: class {
 
 final class AuthService: BaseService, AuthServiceType {
   
-  func socialSignInWithWebUI(type: SocialLoginType) -> Single<Void> {
+  let repository = APIRepository.shared
+  
+  func socialSignInWithWebUI(type: AuthProvider, view: UIWindow) -> Single<Void> {
     return Single<Void>.create { observer in
-      
-      Amplify.Auth.signOut(options: .init(globalSignOut: true)) { result in
+      Amplify.Auth.signInWithWebUI(for: type, presentationAnchor: view) { result in
           switch result {
           case .success:
-              print("Successfully signed out")
+              print("Sign in succeeded")
             observer(.success(()))
           case .failure(let error):
-              print("Sign out failed with error \(error)")
+              print("Sign in failed \(error)")
             observer(.failure(error))
           }
       }
@@ -43,26 +43,24 @@ final class AuthService: BaseService, AuthServiceType {
   }
   
   func signOutGlobally() {
-    AWSMobileClient.default().signOut(options: SignOutOptions(signOutGlobally: true)) { (error) in
-        print("Error: \(error.debugDescription)")
-    }
+      Amplify.Auth.signOut(options: .init(globalSignOut: true)) { result in
+          switch result {
+          case .success:
+              print("Successfully signed out")
+          case .failure(let error):
+              print("Sign out failed with error \(error)")
+          }
+      }
   }
   
   func checkCurrentUserStateInAWS() {
-    switch (AWSMobileClient.default().currentUserState) {
-    case .signedIn:
-      DispatchQueue.main.async {
-        print("Logged In")
-      }
-    case .signedOut:
-      DispatchQueue.main.async {
-        print("Signed Out")
-      }
-    default:
-      AWSMobileClient.default().signOut()
+    _ = Amplify.Auth.fetchAuthSession { result in
+        switch result {
+        case .success(let session):
+            print("Is user signed in - \(session.isSignedIn)")
+        case .failure(let error):
+            print("Fetch session failed with error \(error)")
+        }
     }
   }
-  //    func saveUserFromRealm(user: User) -> Observable<User> {
-  //        <#code#>
-  //    }
 }

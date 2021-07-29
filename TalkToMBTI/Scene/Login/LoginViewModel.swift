@@ -7,14 +7,18 @@
 
 import Foundation
 import RxSwift
+import Amplify
+import AmplifyPlugins
 
 protocol LoginViewModelType: AnyObject {
   var provider: ServiceProviderType { get }
   var resultOfSocialSignIn: PublishSubject<Bool> { get }
   
-  func socialSignInWithWebUI(type: SocialLoginType)
+  func socialSignInWithWebUI(type: AuthProvider, view: UIWindow)
   func signOutGlobally()
   func checkCurrentUserState()
+  
+  func restAPITest()
 }
 
 class LoginViewModel: LoginViewModelType {
@@ -29,8 +33,8 @@ class LoginViewModel: LoginViewModelType {
     self.provider = provider
   }
   
-  func socialSignInWithWebUI(type: SocialLoginType) {
-    provider.authService.socialSignInWithWebUI(type: type)
+  func socialSignInWithWebUI(type: AuthProvider, view: UIWindow) {
+    provider.authService.socialSignInWithWebUI(type: type, view: view)
       .subscribe { [weak self] _ in
         self?.resultOfSocialSignIn.onNext(true)
       } onFailure: { [weak self] error in
@@ -45,5 +49,9 @@ class LoginViewModel: LoginViewModelType {
   
   func checkCurrentUserState() {
     provider.authService.checkCurrentUserStateInAWS()
+  }
+  
+  func restAPITest() {
+    provider.mbtiService.restAPITest()
   }
 }

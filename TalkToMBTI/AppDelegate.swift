@@ -8,7 +8,6 @@
 import UIKit
 import Amplify
 import AmplifyPlugins
-import AWSMobileClient
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,14 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     
-    // Initialize AWSMobileClient singleton
-    AWSMobileClient.default().initialize { (userState, error) in
-        if let userState = userState {
-            print("UserState: \(userState.rawValue)")
-        } else if let error = error {
-            print("error: \(error.localizedDescription)")
-        }
+    do {
+        try Amplify.add(plugin: AWSCognitoAuthPlugin())
+        try Amplify.configure()
+        print("Amplify configured with auth plugin")
+    } catch {
+        print("Failed to initialize Amplify with \(error)")
     }
+
+    let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.APNortheast2,
+       identityPoolId:"ap-northeast-2:c88e7957-6c5f-4f58-908d-e07d0cfe9ca2")
+
+    let configuration = AWSServiceConfiguration(region:.APNortheast2, credentialsProvider:credentialsProvider)
+
+    AWSServiceManager.default().defaultServiceConfiguration = configuration
     
     window = UIWindow(frame: UIScreen.main.bounds)
     window?.backgroundColor = .white
@@ -36,5 +41,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window?.makeKeyAndVisible()
     return true
   }
+  
+  func fetchCurrentAuthSession() {
+      _ = Amplify.Auth.fetchAuthSession { result in
+          switch result {
+          case .success(let session):
+              print("Is user signed in - \(session.isSignedIn)")
+          case .failure(let error):
+              print("Fetch session failed with error \(error)")
+          }
+      }
+  }
 }
-
