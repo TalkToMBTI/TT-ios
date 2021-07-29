@@ -13,6 +13,7 @@ import AmplifyPlugins
 protocol LoginViewModelType: AnyObject {
   var provider: ServiceProviderType { get }
   var resultOfSocialSignIn: PublishSubject<Bool> { get }
+  var resultFetchAuthSession: PublishSubject<Bool> { get }
   
   func socialSignInWithWebUI(type: AuthProvider, view: UIWindow)
   func signOutGlobally()
@@ -28,6 +29,7 @@ class LoginViewModel: LoginViewModelType {
   var disposeBag = DisposeBag()
   
   let resultOfSocialSignIn = PublishSubject<Bool>()
+  let resultFetchAuthSession = PublishSubject<Bool>()
   
   init(provider: ServiceProviderType) {
     self.provider = provider
@@ -48,7 +50,14 @@ class LoginViewModel: LoginViewModelType {
   }
   
   func checkCurrentUserState() {
-    provider.authService.checkCurrentUserStateInAWS()
+    provider.authService.checkCurrentUserStateInAWS() { result in
+      switch result {
+      case .success(let isSignedIn):
+        self.resultFetchAuthSession.onNext(isSignedIn)
+      case .failure(let error):
+        self.resultFetchAuthSession.onError(error)
+      }
+    }
   }
   
   func restAPITest() {

@@ -23,7 +23,7 @@ class LoginViewController: UIViewController {
     super.viewDidLoad()
     bind()
     setupUI()
-    viewModel?.checkCurrentUserState()
+
   }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -32,8 +32,8 @@ class LoginViewController: UIViewController {
   
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
-    viewModel?.socialSignInWithWebUI(type: .apple, view: self.view.window!)
-    viewModel?.restAPITest()
+//    viewModel?.signOutGlobally()
+    viewModel?.checkCurrentUserState()
   }
   
   func setupUI() {
@@ -43,7 +43,29 @@ class LoginViewController: UIViewController {
   func bind() {
     viewModel?.resultOfSocialSignIn
       .bind(onNext: { [weak self] result in
+        guard let self = self else { return }
         if result {
+          print("Social Login Success -> ")
+          print("Result of API Test -> ")
+          DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.viewModel?.restAPITest()
+          }
+        }
+      })
+      .disposed(by: disposeBag)
+    
+    viewModel?.resultFetchAuthSession
+      .observe(on: MainScheduler.asyncInstance)
+      .bind(onNext: { [weak self] isSignedIn in
+        guard let self = self else { return }
+        if isSignedIn {
+          print("로그인 되어있음")
+          print("Result of API Test -> ")
+            self.viewModel?.restAPITest()
+        } else {
+          print("로그인 안되어있음")
+          print("open social login web page -> ")
+          self.viewModel?.socialSignInWithWebUI(type: .apple, view: self.view.window!)
         }
       })
       .disposed(by: disposeBag)

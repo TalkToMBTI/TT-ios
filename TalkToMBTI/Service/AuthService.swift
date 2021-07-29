@@ -17,7 +17,7 @@ enum SocialLoginType {
 protocol AuthServiceType: class {
   func socialSignInWithWebUI(type: AuthProvider, view: UIWindow) -> Single<Void>
   func signOutGlobally()
-  func checkCurrentUserStateInAWS()
+  func checkCurrentUserStateInAWS(_ completion: @escaping (Result<Bool, Error>) -> ())
   //    func saveUserFromRealm(user: User) -> Observable<User>
 }
 
@@ -53,13 +53,15 @@ final class AuthService: BaseService, AuthServiceType {
       }
   }
   
-  func checkCurrentUserStateInAWS() {
+  func checkCurrentUserStateInAWS(_ completion: @escaping (Result<Bool, Error>) -> ()) {
     _ = Amplify.Auth.fetchAuthSession { result in
         switch result {
         case .success(let session):
             print("Is user signed in - \(session.isSignedIn)")
+          completion(.success(session.isSignedIn))
         case .failure(let error):
             print("Fetch session failed with error \(error)")
+          completion(.failure(error))
         }
     }
   }

@@ -21,6 +21,7 @@ target 'TalkToMBTI' do
 
   pod 'Amplify'
   pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
+  pod 'AmplifyPlugins/AWSAPIPlugin'
 
   pod 'AWSMobileClient'
   pod 'AWSAPIGateway'
