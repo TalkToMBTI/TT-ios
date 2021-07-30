@@ -13,6 +13,9 @@ import AmplifyPlugins
 
 protocol SetMyMBTIViewModelType: ViewModelType {
   var provider: ServiceProviderType { get }
+  var mbtiList: BehaviorRelay<[MBTI]> { get }
+  
+  func getMBTIList()
 }
 
 class SetMyMBTIViewModel: SetMyMBTIViewModelType {
