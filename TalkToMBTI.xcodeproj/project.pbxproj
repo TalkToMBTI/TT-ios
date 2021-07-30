@@ -39,6 +39,7 @@
 		BA8AFBD826B44D58004B2980 /* CoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8AFBD726B44D58004B2980 /* CoordinatorType.swift */; };
 		BA8AFBDA26B44E09004B2980 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8AFBD926B44E09004B2980 /* LoginCoordinator.swift */; };
 		BA8AFBDC26B44EC8004B2980 /* SetMyMBTICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8AFBDB26B44EC8004B2980 /* SetMyMBTICoordinator.swift */; };
+		BA8AFBDF26B459D2004B2980 /* MBTI+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8AFBDE26B459D2004B2980 /* MBTI+Codable.swift */; };
 		BA95D17026B09B6F00EEA476 /* ServiceProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA95D16F26B09B6F00EEA476 /* ServiceProviderType.swift */; };
 		BA95D17226B09C3400EEA476 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA95D17126B09C3400EEA476 /* BaseService.swift */; };
 		BA95D18326B1B3A900EEA476 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = BA95D18126B1B3A900EEA476 /* amplifyconfiguration.json */; };
@@ -107,6 +108,7 @@
 		BA8AFBD726B44D58004B2980 /* CoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorType.swift; sourceTree = "<group>"; };
 		BA8AFBD926B44E09004B2980 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		BA8AFBDB26B44EC8004B2980 /* SetMyMBTICoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMyMBTICoordinator.swift; sourceTree = "<group>"; };
+		BA8AFBDE26B459D2004B2980 /* MBTI+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MBTI+Codable.swift"; sourceTree = "<group>"; };
 		BA95D16E26B09AD500EEA476 /* TalkToMBTI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TalkToMBTI.entitlements; sourceTree = "<group>"; };
 		BA95D16F26B09B6F00EEA476 /* ServiceProviderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderType.swift; sourceTree = "<group>"; };
 		BA95D17126B09C3400EEA476 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				BA8AFBAE26B3328A004B2980 /* generated-src */,
 				BA95D17326B09CC800EEA476 /* Mapper */,
 				BA8AFBCF26B449F9004B2980 /* BaseObjects */,
+				BA8AFBDD26B45986004B2980 /* Entity */,
 				BA2C05FE26B09A55007011A5 /* Repository */,
 				BA2C05F926B09A1E007011A5 /* Service */,
 				BA8AFB7126B326D6004B2980 /* Scene */,
@@ -334,6 +337,14 @@
 				BA8AFBD726B44D58004B2980 /* CoordinatorType.swift */,
 			);
 			path = BaseObjects;
+			sourceTree = "<group>";
+		};
+		BA8AFBDD26B45986004B2980 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				BA8AFBDE26B459D2004B2980 /* MBTI+Codable.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		BA95D17326B09CC800EEA476 /* Mapper */ = {
@@ -612,6 +623,7 @@
 				BA8AFBBE26B3328A004B2980 /* MBTIRESTTtmbtirestClient.swift in Sources */,
 				BA8AFBCC26B447D1004B2980 /* MainTabBarViewController.swift in Sources */,
 				BA8AFBCE26B4493F004B2980 /* SetMyMBTIModel.swift in Sources */,
+				BA8AFBDF26B459D2004B2980 /* MBTI+Codable.swift in Sources */,
 				BA2C05C926B0931B007011A5 /* LoginViewController.swift in Sources */,
 				BA8AFB9C26B32EDB004B2980 /* MBTIService.swift in Sources */,
 				BA8AFBBB26B3328A004B2980 /* MBTIRESTPets.swift in Sources */,

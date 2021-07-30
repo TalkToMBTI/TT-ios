@@ -17,8 +17,10 @@ class SetMyMBTIViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.title = "SetMyMBTIViewController"
     bind()
     setupUI()
+    setupConstraints()
   }
   
   override func viewWillAppear(_ animated: Bool) {

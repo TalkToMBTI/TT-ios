@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 import RxAlamofire
 import Amplify
 import AmplifyPlugins
@@ -43,6 +45,28 @@ class APIRepository {
         print("Failed", apiError)
         print("-> End API Test")
       }
+    }
+  }
+  
+  func getMBTIList() -> Observable<Result<[MBTI], Error>> {
+    return Observable<Result<[MBTI],Error>>.create { observer in
+      let dummyMBTIList = "EINSTFPJ"
+        .map { String($0) }
+      var mbtiListForReturn: [MBTI] = []
+      
+      for i in dummyMBTIList[0...1] {
+        for j in dummyMBTIList[2...3] {
+          for k in dummyMBTIList[4...5] {
+            for l in dummyMBTIList[6...7] {
+              mbtiListForReturn.append(MBTI(name: i+j+k+l))
+            }
+          }
+        }
+      }
+      observer.onNext(.success(mbtiListForReturn))
+      observer.onCompleted()
+      
+      return Disposables.create()
     }
   }
 }

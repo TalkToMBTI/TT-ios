@@ -21,18 +21,20 @@ class LoginViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.title = "LoginViewController"
     bind()
     setupUI()
+    //    viewModel?.signOutGlobally()
+
   }
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
+    viewModel?.checkCurrentUserState()
   }
   
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
-//    viewModel?.signOutGlobally()
-    viewModel?.checkCurrentUserState()
   }
   
   func setupUI() {
@@ -60,7 +62,8 @@ class LoginViewController: UIViewController {
         if isSignedIn {
           print("로그인 되어있음")
           print("Result of API Test -> ")
-            self.viewModel?.restAPITest()
+          self.viewModel?.restAPITest()
+          self.coordinator?.pushToSetMyMBTIVC()
         } else {
           print("로그인 안되어있음")
           print("open social login web page -> ")
@@ -70,4 +73,3 @@ class LoginViewController: UIViewController {
       .disposed(by: disposeBag)
   }
 }
-

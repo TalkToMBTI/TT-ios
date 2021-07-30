@@ -7,6 +7,7 @@
 
 import Foundation
 import RxSwift
+import RxCocoa
 import Amplify
 import AmplifyPlugins
 
@@ -20,7 +21,18 @@ class SetMyMBTIViewModel: SetMyMBTIViewModelType {
   
   var disposeBag = DisposeBag()
   
+  var mbtiList = BehaviorRelay<[MBTI]>.init(value: [])
+  
   init(provider: ServiceProviderType) {
     self.provider = provider
+  }
+  
+  func getMBTIList() {
+    provider.mbtiService
+      .getMBTIList()
+      .subscribe(onNext: { [weak self] list in
+        self?.mbtiList.accept(list)
+      })
+      .disposed(by: disposeBag)
   }
 }

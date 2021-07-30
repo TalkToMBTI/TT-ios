@@ -10,7 +10,7 @@ import RxSwift
 import RxCocoa
 
 protocol LoginCoordinatorType: Coordinator {
-  
+  func pushToSetMyMBTIVC()
 }
 
 class LoginCoordinator: LoginCoordinatorType {
@@ -21,6 +21,7 @@ class LoginCoordinator: LoginCoordinatorType {
   }
   
   func pushToSetMyMBTIVC() {
+    print(#function)
     let setMyMBTIVC = SetMyMBTIViewController()
     setMyMBTIVC.viewModel = SetMyMBTIViewModel(provider: ServiceProvider())
     setMyMBTIVC.coordinator = SetMyMBTICoordinator(viewController: setMyMBTIVC)
