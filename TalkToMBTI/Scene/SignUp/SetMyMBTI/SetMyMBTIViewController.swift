@@ -6,24 +6,37 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class SetMyMBTIViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+  
+  var viewModel: SetMyMBTIViewModelType?
+  var coordinator: SetMyMBTICoordinator?
+  var disposeBag = DisposeBag()
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    bind()
+    setupUI()
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+  }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+  }
+  
+  func setupUI() {
+    view.backgroundColor = .white
+  }
+  
+  func setupConstraints() {
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+  }
+  
+  func bind() {
+  }
 }
