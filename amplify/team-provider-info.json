@@ -1,0 +1,25 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-talktombti-dev-04543-authRole",
+      "UnauthRoleArn": "arn:aws:iam::265609190508:role/amplify-talktombti-dev-04543-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::265609190508:role/amplify-talktombti-dev-04543-authRole",
+      "Region": "ap-northeast-2",
+      "DeploymentBucketName": "amplify-talktombti-dev-04543-deployment",
+      "UnauthRoleName": "amplify-talktombti-dev-04543-unauthRole",
+      "StackName": "amplify-talktombti-dev-04543",
+      "StackId": "arn:aws:cloudformation:ap-northeast-2:265609190508:stack/amplify-talktombti-dev-04543/e0767ff0-efba-11eb-8bf5-022ca4540538",
+      "AmplifyAppId": "dhh72l3ozpyrq"
+    },
+    "categories": {
+      "auth": {
+        "talktombtida2a3843": {
+          "userPoolId": "ap-northeast-2_9av4Nb3Wh",
+          "userPoolName": "TT-MBTI",
+          "webClientId": "3nctn0v6rm3pi697gci57455kt",
+          "nativeClientId": "1gk7bshc169pdjc2qjvq8fq99e"
+        }
+      }
+    }
+  }
+}
