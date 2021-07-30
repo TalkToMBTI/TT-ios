@@ -10,7 +10,7 @@ import Amplify
 import AmplifyPlugins
 import AWSMobileClient
 
-protocol MBTIServiceType: class {
+protocol MBTIServiceType: AnyObject {
   func restAPITest()
 }
 

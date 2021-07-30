@@ -16,14 +16,13 @@ import Then
 class LoginViewController: UIViewController {
   
   var viewModel: LoginViewModelType?
-  
+  var coordinator: LoginCoordinator?
   var disposeBag = DisposeBag()
   
   override func viewDidLoad() {
     super.viewDidLoad()
     bind()
     setupUI()
-
   }
   
   override func viewWillAppear(_ animated: Bool) {

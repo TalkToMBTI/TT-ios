@@ -10,7 +10,7 @@ import RxSwift
 import Amplify
 import AmplifyPlugins
 
-protocol LoginViewModelType: AnyObject {
+protocol LoginViewModelType: ViewModelType {
   var provider: ServiceProviderType { get }
   var resultOfSocialSignIn: PublishSubject<Bool> { get }
   var resultFetchAuthSession: PublishSubject<Bool> { get }
@@ -23,7 +23,7 @@ protocol LoginViewModelType: AnyObject {
 }
 
 class LoginViewModel: LoginViewModelType {
-  var model: LoginModel = LoginModel()
+  var model: ModelType? = LoginModel()
   let provider: ServiceProviderType
   
   var disposeBag = DisposeBag()

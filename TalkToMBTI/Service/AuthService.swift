@@ -14,7 +14,7 @@ enum SocialLoginType {
   case apple
 }
 
-protocol AuthServiceType: class {
+protocol AuthServiceType: AnyObject {
   func socialSignInWithWebUI(type: AuthProvider, view: UIWindow) -> Single<Void>
   func signOutGlobally()
   func checkCurrentUserStateInAWS(_ completion: @escaping (Result<Bool, Error>) -> ())

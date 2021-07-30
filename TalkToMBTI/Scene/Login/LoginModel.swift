@@ -8,7 +8,7 @@
 import Foundation
 import RxSwift
 
-protocol LoginModelType: AnyObject {
+protocol LoginModelType: ModelType {
   
 }
 

@@ -49,8 +49,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     let loginVC = LoginViewController()
     loginVC.viewModel = LoginViewModel(provider: ServiceProvider())
+    let loginNaviVC = UINavigationController(rootViewController: loginVC)
+    loginVC.modalPresentationStyle = .fullScreen
     
-    window?.rootViewController = loginVC
+    window?.rootViewController = loginNaviVC
     window?.makeKeyAndVisible()
     return true
   }

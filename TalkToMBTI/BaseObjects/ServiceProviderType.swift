@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ServiceProviderType: class {
+protocol ServiceProviderType: AnyObject {
   var authService: AuthServiceType { get }
   var mbtiService: MBTIServiceType { get }
 }

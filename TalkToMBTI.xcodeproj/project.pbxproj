@@ -31,6 +31,14 @@
 		BA8AFBBC26B3328A004B2980 /* MBTIRESTPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8AFBB526B3328A004B2980 /* MBTIRESTPet.swift */; };
 		BA8AFBBD26B3328A004B2980 /* MBTIRESTPetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8AFBB626B3328A004B2980 /* MBTIRESTPetType.swift */; };
 		BA8AFBBE26B3328A004B2980 /* MBTIRESTTtmbtirestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8AFBB726B3328A004B2980 /* MBTIRESTTtmbtirestClient.swift */; };
+		BA8AFBCC26B447D1004B2980 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8AFBCB26B447D1004B2980 /* MainTabBarViewController.swift */; };
+		BA8AFBCE26B4493F004B2980 /* SetMyMBTIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8AFBCD26B4493F004B2980 /* SetMyMBTIModel.swift */; };
+		BA8AFBD126B44A20004B2980 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8AFBD026B44A20004B2980 /* ViewModelType.swift */; };
+		BA8AFBD426B44AF3004B2980 /* ModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8AFBD326B44AF3004B2980 /* ModelType.swift */; };
+		BA8AFBD626B44B16004B2980 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8AFBD526B44B16004B2980 /* BaseViewController.swift */; };
+		BA8AFBD826B44D58004B2980 /* CoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8AFBD726B44D58004B2980 /* CoordinatorType.swift */; };
+		BA8AFBDA26B44E09004B2980 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8AFBD926B44E09004B2980 /* LoginCoordinator.swift */; };
+		BA8AFBDC26B44EC8004B2980 /* SetMyMBTICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8AFBDB26B44EC8004B2980 /* SetMyMBTICoordinator.swift */; };
 		BA95D17026B09B6F00EEA476 /* ServiceProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA95D16F26B09B6F00EEA476 /* ServiceProviderType.swift */; };
 		BA95D17226B09C3400EEA476 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA95D17126B09C3400EEA476 /* BaseService.swift */; };
 		BA95D18326B1B3A900EEA476 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = BA95D18126B1B3A900EEA476 /* amplifyconfiguration.json */; };
@@ -91,6 +99,14 @@
 		BA8AFBB526B3328A004B2980 /* MBTIRESTPet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBTIRESTPet.swift; sourceTree = "<group>"; };
 		BA8AFBB626B3328A004B2980 /* MBTIRESTPetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBTIRESTPetType.swift; sourceTree = "<group>"; };
 		BA8AFBB726B3328A004B2980 /* MBTIRESTTtmbtirestClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBTIRESTTtmbtirestClient.swift; sourceTree = "<group>"; };
+		BA8AFBCB26B447D1004B2980 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		BA8AFBCD26B4493F004B2980 /* SetMyMBTIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMyMBTIModel.swift; sourceTree = "<group>"; };
+		BA8AFBD026B44A20004B2980 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		BA8AFBD326B44AF3004B2980 /* ModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelType.swift; sourceTree = "<group>"; };
+		BA8AFBD526B44B16004B2980 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BA8AFBD726B44D58004B2980 /* CoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorType.swift; sourceTree = "<group>"; };
+		BA8AFBD926B44E09004B2980 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		BA8AFBDB26B44EC8004B2980 /* SetMyMBTICoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMyMBTICoordinator.swift; sourceTree = "<group>"; };
 		BA95D16E26B09AD500EEA476 /* TalkToMBTI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TalkToMBTI.entitlements; sourceTree = "<group>"; };
 		BA95D16F26B09B6F00EEA476 /* ServiceProviderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderType.swift; sourceTree = "<group>"; };
 		BA95D17126B09C3400EEA476 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
@@ -195,6 +211,7 @@
 				BA95D16E26B09AD500EEA476 /* TalkToMBTI.entitlements */,
 				BA8AFBAE26B3328A004B2980 /* generated-src */,
 				BA95D17326B09CC800EEA476 /* Mapper */,
+				BA8AFBCF26B449F9004B2980 /* BaseObjects */,
 				BA2C05FE26B09A55007011A5 /* Repository */,
 				BA2C05F926B09A1E007011A5 /* Service */,
 				BA8AFB7126B326D6004B2980 /* Scene */,
@@ -230,6 +247,7 @@
 				BA2C05C826B0931B007011A5 /* LoginViewController.swift */,
 				BA2C05F526B09573007011A5 /* LoginViewModel.swift */,
 				BA2C05F726B095A1007011A5 /* LoginModel.swift */,
+				BA8AFBD926B44E09004B2980 /* LoginCoordinator.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -238,8 +256,6 @@
 			isa = PBXGroup;
 			children = (
 				BA2C05FC26B09A4F007011A5 /* AuthService.swift */,
-				BA95D16F26B09B6F00EEA476 /* ServiceProviderType.swift */,
-				BA95D17126B09C3400EEA476 /* BaseService.swift */,
 				BA8AFB9B26B32EDB004B2980 /* MBTIService.swift */,
 			);
 			path = Service;
@@ -257,6 +273,7 @@
 		BA8AFB7126B326D6004B2980 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				BA8AFBCA26B44782004B2980 /* Main */,
 				BA8AFB7226B326E2004B2980 /* SignUp */,
 				BA2C05F426B09567007011A5 /* Login */,
 			);
@@ -276,6 +293,8 @@
 			children = (
 				BA8AFB7526B32717004B2980 /* SetMyMBTIViewController.swift */,
 				BA8AFB7726B32722004B2980 /* SetMyMBTIViewModel.swift */,
+				BA8AFBCD26B4493F004B2980 /* SetMyMBTIModel.swift */,
+				BA8AFBDB26B44EC8004B2980 /* SetMyMBTICoordinator.swift */,
 			);
 			path = SetMyMBTI;
 			sourceTree = "<group>";
@@ -294,6 +313,27 @@
 				BA8AFBB726B3328A004B2980 /* MBTIRESTTtmbtirestClient.swift */,
 			);
 			path = "generated-src";
+			sourceTree = "<group>";
+		};
+		BA8AFBCA26B44782004B2980 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BA8AFBCB26B447D1004B2980 /* MainTabBarViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BA8AFBCF26B449F9004B2980 /* BaseObjects */ = {
+			isa = PBXGroup;
+			children = (
+				BA95D16F26B09B6F00EEA476 /* ServiceProviderType.swift */,
+				BA95D17126B09C3400EEA476 /* BaseService.swift */,
+				BA8AFBD526B44B16004B2980 /* BaseViewController.swift */,
+				BA8AFBD026B44A20004B2980 /* ViewModelType.swift */,
+				BA8AFBD326B44AF3004B2980 /* ModelType.swift */,
+				BA8AFBD726B44D58004B2980 /* CoordinatorType.swift */,
+			);
+			path = BaseObjects;
 			sourceTree = "<group>";
 		};
 		BA95D17326B09CC800EEA476 /* Mapper */ = {
@@ -563,10 +603,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA95D17226B09C3400EEA476 /* BaseService.swift in Sources */,
+				BA8AFBD126B44A20004B2980 /* ViewModelType.swift in Sources */,
 				BA8AFB7626B32717004B2980 /* SetMyMBTIViewController.swift in Sources */,
 				BA8AFBB926B3328A004B2980 /* Empty.swift in Sources */,
+				BA8AFBDA26B44E09004B2980 /* LoginCoordinator.swift in Sources */,
 				BA8AFBBD26B3328A004B2980 /* MBTIRESTPetType.swift in Sources */,
+				BA8AFBD626B44B16004B2980 /* BaseViewController.swift in Sources */,
 				BA8AFBBE26B3328A004B2980 /* MBTIRESTTtmbtirestClient.swift in Sources */,
+				BA8AFBCC26B447D1004B2980 /* MainTabBarViewController.swift in Sources */,
+				BA8AFBCE26B4493F004B2980 /* SetMyMBTIModel.swift in Sources */,
 				BA2C05C926B0931B007011A5 /* LoginViewController.swift in Sources */,
 				BA8AFB9C26B32EDB004B2980 /* MBTIService.swift in Sources */,
 				BA8AFBBB26B3328A004B2980 /* MBTIRESTPets.swift in Sources */,
@@ -579,8 +624,11 @@
 				BA2C05F626B09573007011A5 /* LoginViewModel.swift in Sources */,
 				BA8AFB7826B32722004B2980 /* SetMyMBTIViewModel.swift in Sources */,
 				BA8AFBBA26B3328A004B2980 /* MBTIRESTNewPet.swift in Sources */,
+				BA8AFBD426B44AF3004B2980 /* ModelType.swift in Sources */,
 				BA8AFB7026B320DF004B2980 /* APIEnvironment.swift in Sources */,
 				BA8AFBB826B3328A004B2980 /* MBTIRESTNewPetResponse.swift in Sources */,
+				BA8AFBDC26B44EC8004B2980 /* SetMyMBTICoordinator.swift in Sources */,
+				BA8AFBD826B44D58004B2980 /* CoordinatorType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

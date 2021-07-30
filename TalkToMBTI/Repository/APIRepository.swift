@@ -24,36 +24,24 @@ class APIRepository {
   }
   
   func putMBTIUser() {
-//    client.mbtiUserPut().continueWith { result -> AnyObject? in
-//      if let error = result.error {
-//        print("Error: ", error)
-//      }
-//
-//      if let result = result.result {
-//        print("Success")
-//        print("-> End API Test")
-//      }
-//
-//      return nil
-//    }
     let headerParameters = [
-                 "Content-Type": "application/json",
-                 "Accept": "application/json",
-
-            ]
-
+      "Content-Type": "application/json",
+      "Accept": "application/json",
+    ]
+    
     let queryParameters:[String:String] = [:]
-
-    let request = RESTRequest(path: "/mbti/user", headers: headerParameters, queryParameters: queryParameters, body: nil)
-
+    
+    let request = RESTRequest(path: "/mbti/user",
+                              headers: headerParameters,
+                              queryParameters: queryParameters, body: nil)
     Amplify.API.put(request: request) { result in
       switch result {
       case .success:
-          print("Success")
-          print("-> End API Test")
+        print("Success")
+        print("-> End API Test")
       case .failure(let apiError):
-          print("Failed", apiError)
-          print("-> End API Test")
+        print("Failed", apiError)
+        print("-> End API Test")
       }
     }
   }
