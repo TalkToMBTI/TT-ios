@@ -20,13 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       try Amplify.add(plugin: AWSCognitoAuthPlugin())
       try Amplify.add(plugin: AWSAPIPlugin())
       try Amplify.configure()
-      print("Amplify configured with auth plugin")
+      print("Amplify configured with API and Auth plugin")
     } catch {
       print("Failed to initialize Amplify with \(error)")
     }
     
     let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.APNortheast2,
-                                                            identityPoolId:"ap-northeast-2:c88e7957-6c5f-4f58-908d-e07d0cfe9ca2")
+                                                            identityPoolId:"ap-northeast-2:ff20c60a-0c8d-4fc0-8f71-6e3d6ead6245")
     
     let configuration = AWSServiceConfiguration(region:.APNortheast2, credentialsProvider:credentialsProvider)
     
