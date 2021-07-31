@@ -19,30 +19,43 @@ class APIRepository {
   static let shared = APIRepository(environment: .prod)
   
   let environment: APIEnvironment
-  let client = MBTIRESTTtmbtirestClient.default()
+  let client = TTDevttmbtiClient.default()
   
   private init(environment: APIEnvironment = .prod) {
     self.environment = environment
   }
   
   func putMBTIUser() {
+    AWSMobileClient.default().getTokens { tokens, err in
+      if let accessToken = tokens?.accessToken?.tokenString {
+        print("accessToken :", accessToken)
+        self.putMBTIUser(token: accessToken)
+      } else if let error = err {
+        print(error)
+      }
+    }
+  }
+  
+  func putMBTIUser(token: String) {
     let headerParameters = [
       "Content-Type": "application/json",
       "Accept": "application/json",
+      "Authorization" : token
     ]
     
     let queryParameters:[String:String] = [:]
     
     let request = RESTRequest(path: "/mbti/user",
                               headers: headerParameters,
-                              queryParameters: queryParameters, body: nil)
-    Amplify.API.put(request: request) { result in
+                              queryParameters: queryParameters,
+                              body: nil)
+    Amplify.API.get(request: request) { result in
       switch result {
       case .success:
         print("Success")
         print("-> End API Test")
       case .failure(let apiError):
-        print("Failed", apiError)
+        print("Failed", apiError, apiError.errorDescription, apiError.localizedDescription)
         print("-> End API Test")
       }
     }

@@ -12,5 +12,5 @@ struct APIEnvironment {
 }
 
 extension APIEnvironment {
-  static let prod = APIEnvironment(baseUrl: URL(string: "https://ltq23n7hwl.execute-api.ap-northeast-2.amazonaws.com/dev")!)
+  static let prod = APIEnvironment(baseUrl: URL(string: "https://bdzty6xjs4.execute-api.ap-northeast-2.amazonaws.com/dev")!)
 }

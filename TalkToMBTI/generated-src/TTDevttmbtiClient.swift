@@ -17,12 +17,12 @@
 import AWSCore
 import AWSAPIGateway
 
-public class MBTIRESTTtmbtirestClient: AWSAPIGatewayClient {
+public class TTDevttmbtiClient: AWSAPIGatewayClient {
 
-	static let AWSInfoClientKey = "MBTIRESTTtmbtirestClient"
+	static let AWSInfoClientKey = "TTDevttmbtiClient"
 
 	private static let _serviceClients = AWSSynchronizedMutableDictionary()
-	private static let _defaultClient:MBTIRESTTtmbtirestClient = {
+	private static let _defaultClient:TTDevttmbtiClient = {
 		var serviceConfiguration: AWSServiceConfiguration? = nil
         let serviceInfo = AWSInfo.default().defaultServiceInfo(AWSInfoClientKey)
         if let serviceInfo = serviceInfo {
@@ -33,7 +33,7 @@ public class MBTIRESTTtmbtirestClient: AWSAPIGatewayClient {
             serviceConfiguration = AWSServiceConfiguration(region: .Unknown, credentialsProvider: nil)
         }
         
-        return MBTIRESTTtmbtirestClient(configuration: serviceConfiguration!)
+        return TTDevttmbtiClient(configuration: serviceConfiguration!)
 	}()
     
 	/**
@@ -51,14 +51,14 @@ public class MBTIRESTTtmbtirestClient: AWSAPIGatewayClient {
 	
 	 Then call the following to get the default service client:
 	
-	     let serviceClient = MBTIRESTTtmbtirestClient.default()
+	     let serviceClient = TTDevttmbtiClient.default()
 
-     Alternatively, this configuration could also be set in the `info.plist` file of your app under `AWS` dictionary with a configuration dictionary by name `MBTIRESTTtmbtirestClient`.
+     Alternatively, this configuration could also be set in the `info.plist` file of your app under `AWS` dictionary with a configuration dictionary by name `TTDevttmbtiClient`.
 	
 	 @return The default service client.
 	 */ 
 	 
-	public class func `default`() -> MBTIRESTTtmbtirestClient{
+	public class func `default`() -> TTDevttmbtiClient{
 		return _defaultClient
 	}
 
@@ -70,7 +70,7 @@ public class MBTIRESTTtmbtirestClient: AWSAPIGatewayClient {
 	     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 	         let credentialProvider = AWSCognitoCredentialsProvider(regionType: .USEast1, identityPoolId: "YourIdentityPoolId")
 	         let configuration = AWSServiceConfiguration(region: .USWest2, credentialsProvider: credentialProvider)
-	         MBTIRESTTtmbtirestClient.registerClient(withConfiguration: configuration, forKey: "USWest2MBTIRESTTtmbtirestClient")
+	         TTDevttmbtiClient.registerClient(withConfiguration: configuration, forKey: "USWest2TTDevttmbtiClient")
 	
 	         return true
 	     }
@@ -78,7 +78,7 @@ public class MBTIRESTTtmbtirestClient: AWSAPIGatewayClient {
 	 Then call the following to get the service client:
 	
 	
-	     let serviceClient = MBTIRESTTtmbtirestClient.client(forKey: "USWest2MBTIRESTTtmbtirestClient")
+	     let serviceClient = TTDevttmbtiClient.client(forKey: "USWest2TTDevttmbtiClient")
 	
 	 @warning After calling this method, do not modify the configuration object. It may cause unspecified behaviors.
 	
@@ -87,7 +87,7 @@ public class MBTIRESTTtmbtirestClient: AWSAPIGatewayClient {
 	 */
 	
 	public class func registerClient(withConfiguration configuration: AWSServiceConfiguration, forKey key: String){
-		_serviceClients.setObject(MBTIRESTTtmbtirestClient(configuration: configuration), forKey: key  as NSString);
+		_serviceClients.setObject(TTDevttmbtiClient(configuration: configuration), forKey: key  as NSString);
 	}
 
 	/**
@@ -98,21 +98,21 @@ public class MBTIRESTTtmbtirestClient: AWSAPIGatewayClient {
 	     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 	         let credentialProvider = AWSCognitoCredentialsProvider(regionType: .USEast1, identityPoolId: "YourIdentityPoolId")
 	         let configuration = AWSServiceConfiguration(region: .USWest2, credentialsProvider: credentialProvider)
-	         MBTIRESTTtmbtirestClient.registerClient(withConfiguration: configuration, forKey: "USWest2MBTIRESTTtmbtirestClient")
+	         TTDevttmbtiClient.registerClient(withConfiguration: configuration, forKey: "USWest2TTDevttmbtiClient")
 	
 	         return true
 	     }
 	
 	 Then call the following to get the service client:
 	 
-	 	let serviceClient = MBTIRESTTtmbtirestClient.client(forKey: "USWest2MBTIRESTTtmbtirestClient")
+	 	let serviceClient = TTDevttmbtiClient.client(forKey: "USWest2TTDevttmbtiClient")
 	 
 	 @param key A string to identify the service client.
 	 @return An instance of the service client.
 	 */
-	public class func client(forKey key: String) -> MBTIRESTTtmbtirestClient {
+	public class func client(forKey key: String) -> TTDevttmbtiClient {
 		objc_sync_enter(self)
-		if let client: MBTIRESTTtmbtirestClient = _serviceClients.object(forKey: key) as? MBTIRESTTtmbtirestClient {
+		if let client: TTDevttmbtiClient = _serviceClients.object(forKey: key) as? TTDevttmbtiClient {
 			objc_sync_exit(self)
 		    return client
 		}
@@ -120,10 +120,10 @@ public class MBTIRESTTtmbtirestClient: AWSAPIGatewayClient {
 		let serviceInfo = AWSInfo.default().defaultServiceInfo(AWSInfoClientKey)
 		if let serviceInfo = serviceInfo {
 			let serviceConfiguration = AWSServiceConfiguration(region: serviceInfo.region, credentialsProvider: serviceInfo.cognitoCredentialsProvider)
-			MBTIRESTTtmbtirestClient.registerClient(withConfiguration: serviceConfiguration!, forKey: key)
+			TTDevttmbtiClient.registerClient(withConfiguration: serviceConfiguration!, forKey: key)
 		}
 		objc_sync_exit(self)
-		return _serviceClients.object(forKey: key) as! MBTIRESTTtmbtirestClient;
+		return _serviceClients.object(forKey: key) as! TTDevttmbtiClient;
 	}
 
 	/**
@@ -141,16 +141,33 @@ public class MBTIRESTTtmbtirestClient: AWSAPIGatewayClient {
 	    super.init()
 	
 	    self.configuration = configuration.copy() as! AWSServiceConfiguration
-	    var URLString: String = "https://ltq23n7hwl.execute-api.ap-northeast-2.amazonaws.com/dev"
+	    var URLString: String = "https://bdzty6xjs4.execute-api.ap-northeast-2.amazonaws.com/dev"
 	    if URLString.hasSuffix("/") {
 	        URLString = URLString.substring(to: URLString.index(before: URLString.endIndex))
 	    }
-    self.configuration.endpoint = AWSEndpoint(region: .APNortheast2, service: .APIGateway, url: URL(string: URLString))
+	    self.configuration.endpoint = AWSEndpoint(region: configuration.regionType, service: .APIGateway, url: URL(string: URLString))
 	    let signer: AWSSignatureV4Signer = AWSSignatureV4Signer(credentialsProvider: configuration.credentialsProvider, endpoint: self.configuration.endpoint)
 	    if let endpoint = self.configuration.endpoint {
 	    	self.configuration.baseURL = endpoint.url
 	    }
 	    self.configuration.requestInterceptors = [AWSNetworkingRequestInterceptor(), signer]
+	}
+  
+    /*
+     return type: 
+     */
+  public func mbtiUserGet() -> AWSTask<AnyObject> {
+	    let headerParameters = [
+                   "Content-Type": "application/json",
+                   "Accept": "application/json",
+                   
+	            ]
+	    
+	    let queryParameters:[String:Any] = [:]
+	    
+	    let pathParameters:[String:Any] = [:]
+	    
+	    return self.invokeHTTPRequest("GET", urlString: "/mbti/user", pathParameters: pathParameters, queryParameters: queryParameters, headerParameters: headerParameters, body: nil, responseClass: nil)
 	}
 
 	
@@ -160,7 +177,7 @@ public class MBTIRESTTtmbtirestClient: AWSAPIGatewayClient {
      
      return type: 
      */
-    public func rootGet() -> AWSTask<AnyObject> {
+    public func mbtiUserPut() -> AWSTask<AnyObject> {
 	    let headerParameters = [
                    "Content-Type": "application/json",
                    "Accept": "application/json",
@@ -171,7 +188,7 @@ public class MBTIRESTTtmbtirestClient: AWSAPIGatewayClient {
 	    
 	    let pathParameters:[String:Any] = [:]
 	    
-	    return self.invokeHTTPRequest("GET", urlString: "/", pathParameters: pathParameters, queryParameters: queryParameters, headerParameters: headerParameters, body: nil, responseClass: nil)
+	    return self.invokeHTTPRequest("PUT", urlString: "/mbti/user", pathParameters: pathParameters, queryParameters: queryParameters, headerParameters: headerParameters, body: nil, responseClass: nil)
 	}
 
 	
@@ -179,9 +196,9 @@ public class MBTIRESTTtmbtirestClient: AWSAPIGatewayClient {
      
      
      
-     return type: Empty
+     return type: 
      */
-    public func mbtiUserPut() -> AWSTask<Empty> {
+    public func mbtiUserOptions() -> AWSTask<AnyObject> {
 	    let headerParameters = [
                    "Content-Type": "application/json",
                    "Accept": "application/json",
@@ -192,121 +209,7 @@ public class MBTIRESTTtmbtirestClient: AWSAPIGatewayClient {
 	    
 	    let pathParameters:[String:Any] = [:]
 	    
-	    return self.invokeHTTPRequest("PUT", urlString: "/mbti/user", pathParameters: pathParameters, queryParameters: queryParameters, headerParameters: headerParameters, body: nil, responseClass: Empty.self) as! AWSTask<Empty>
-	}
-
-	
-    /*
-     
-     
-     @param type 
-     @param page 
-     
-     return type: MBTIRESTPets
-     */
-    public func petsGet(type: String?, page: String?) -> AWSTask<MBTIRESTPets> {
-	    let headerParameters = [
-                   "Content-Type": "application/json",
-                   "Accept": "application/json",
-                   
-	            ]
-	    
-	    var queryParameters:[String:Any] = [:]
-	    queryParameters["type"] = type
-	    queryParameters["page"] = page
-	    
-	    let pathParameters:[String:Any] = [:]
-	    
-	    return self.invokeHTTPRequest("GET", urlString: "/pets", pathParameters: pathParameters, queryParameters: queryParameters, headerParameters: headerParameters, body: nil, responseClass: MBTIRESTPets.self) as! AWSTask<MBTIRESTPets>
-	}
-
-	
-    /*
-     
-     
-     @param body 
-     
-     return type: MBTIRESTNewPetResponse
-     */
-    public func petsPost(body: MBTIRESTNewPet) -> AWSTask<MBTIRESTNewPetResponse> {
-	    let headerParameters = [
-                   "Content-Type": "application/json",
-                   "Accept": "application/json",
-                   
-	            ]
-	    
-	    let queryParameters:[String:Any] = [:]
-	    
-	    let pathParameters:[String:Any] = [:]
-	    
-	    return self.invokeHTTPRequest("POST", urlString: "/pets", pathParameters: pathParameters, queryParameters: queryParameters, headerParameters: headerParameters, body: body, responseClass: MBTIRESTNewPetResponse.self) as! AWSTask<MBTIRESTNewPetResponse>
-	}
-
-	
-    /*
-     
-     
-     
-     return type: Empty
-     */
-    public func petsOptions() -> AWSTask<Empty> {
-	    let headerParameters = [
-                   "Content-Type": "application/json",
-                   "Accept": "application/json",
-                   
-	            ]
-	    
-	    let queryParameters:[String:Any] = [:]
-	    
-	    let pathParameters:[String:Any] = [:]
-	    
-	    return self.invokeHTTPRequest("OPTIONS", urlString: "/pets", pathParameters: pathParameters, queryParameters: queryParameters, headerParameters: headerParameters, body: nil, responseClass: Empty.self) as! AWSTask<Empty>
-	}
-
-	
-    /*
-     
-     
-     @param petId 
-     
-     return type: MBTIRESTPet
-     */
-    public func petsPetIdGet(petId: String) -> AWSTask<MBTIRESTPet> {
-	    let headerParameters = [
-                   "Content-Type": "application/json",
-                   "Accept": "application/json",
-                   
-	            ]
-	    
-	    let queryParameters:[String:Any] = [:]
-	    
-	    var pathParameters:[String:Any] = [:]
-	    pathParameters["petId"] = petId
-	    
-	    return self.invokeHTTPRequest("GET", urlString: "/pets/{petId}", pathParameters: pathParameters, queryParameters: queryParameters, headerParameters: headerParameters, body: nil, responseClass: MBTIRESTPet.self) as! AWSTask<MBTIRESTPet>
-	}
-
-	
-    /*
-     
-     
-     @param petId 
-     
-     return type: Empty
-     */
-    public func petsPetIdOptions(petId: String) -> AWSTask<Empty> {
-	    let headerParameters = [
-                   "Content-Type": "application/json",
-                   "Accept": "application/json",
-                   
-	            ]
-	    
-	    let queryParameters:[String:Any] = [:]
-	    
-	    var pathParameters:[String:Any] = [:]
-	    pathParameters["petId"] = petId
-	    
-	    return self.invokeHTTPRequest("OPTIONS", urlString: "/pets/{petId}", pathParameters: pathParameters, queryParameters: queryParameters, headerParameters: headerParameters, body: nil, responseClass: Empty.self) as! AWSTask<Empty>
+	    return self.invokeHTTPRequest("OPTIONS", urlString: "/mbti/user", pathParameters: pathParameters, queryParameters: queryParameters, headerParameters: headerParameters, body: nil, responseClass: nil)
 	}
 
 
